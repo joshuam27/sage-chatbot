@@ -1,0 +1,17 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Bakit may warning na \"Your attendance will be part of the Exception Report?\"?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "A message keeps on showing “You are xxx meters away from the store. Your attendance will be part of the Exception Report if you time-in outside the allowable radius of xxx meters. Would you like to proceed?” during time in",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

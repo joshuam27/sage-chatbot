@@ -1,0 +1,158 @@
+{
+  "name": "1e6de3b5-a052-4d02-86a9-4e550018bf63",
+  "displayName": "selection.return #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "swiftpoint device"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "input_product": "swiftpoint device",
+        "reprompt_count": 0
+      },
+      "triggeredIntent": {
+        "name": "product.selection"
+      },
+      "currentPage": {
+        "name": "SwiftPoint Device",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Got it! Please let me know your concern about the SwiftPoint Device application. Or you may also check the available FAQs." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i want to pick again"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "reprompt_count": 0
+      },
+      "triggeredIntent": {
+        "name": "selection.return"
+      },
+      "currentPage": {
+        "name": "Product Selection",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Which among these products do you have a question or concern with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "swiftpoint webtool"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "input_product": "swiftpoint webtool",
+        "reprompt_count": 0
+      },
+      "triggeredIntent": {
+        "name": "product.selection"
+      },
+      "currentPage": {
+        "name": "SwiftPoint Webtool",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Got it! Please let me know your concern about the SwiftPoint Webtool application. Or you may also check the available FAQs." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "go back please"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "reprompt_count": 0
+      },
+      "triggeredIntent": {
+        "name": "selection.return"
+      },
+      "currentPage": {
+        "name": "Product Selection",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Which among these products do you have a question or concern with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "others"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "input_product": "others",
+        "reprompt_count": 0
+      },
+      "triggeredIntent": {
+        "name": "product.selection"
+      },
+      "currentPage": {
+        "name": "Concern Prompt",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "For questions or concerns about any topics not listed above, kindly provide the following info so that we may verify your user account." ]
+      }, {
+        "text": [ "Please provide the details of your concern or inquiry." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1695707829,
+    "nanos": 693304000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Product Selection"
+  }
+}

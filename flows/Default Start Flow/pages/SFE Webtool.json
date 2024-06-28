@@ -1,0 +1,130 @@
+{
+  "name": "795303fd-38ab-4563-9e9a-a4a1d080b614",
+  "displayName": "SFE Webtool",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "56781630-e366-423e-a44b-3dcd5a9ebd0d"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Selection",
+    "name": "bc684b33-be89-4b6a-bd62-45f676543dd4"
+  }, {
+    "intent": "input.any",
+    "condition": "$session.params.reprompt_count \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "26b958de-0124-48d1-91a0-03563579f165"
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": "$sys.func.ADD($session.params.reprompt_count , 1)"
+      } ]
+    },
+    "name": "096b6689-6bc7-4581-8c1b-42ea2bf98eb7"
+  }, {
+    "intent": "live.agent.proceed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for your time and patience. One of our agents will be contacting you soon regarding your concern or inquiry. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Live Agent Page",
+    "name": "546a19c3-389c-4801-971d-04c45d5da711"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "38b6ad6a-8468-4801-9da0-04a5b2fe8031"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6580f19c-071e-4e6c-ad59-134fa867efe4"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "473f8077-d5ac-4079-9a33-56322173b195"
+  } ],
+  "transitionRouteGroups": [ "FAQ SFE Webtool" ]
+}

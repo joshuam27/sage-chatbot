@@ -1,0 +1,6 @@
+{
+  "name": "b4b30fd5-3c95-4d7e-98ed-df8898d50e49",
+  "displayName": "sfe.device.transactions.unsent",
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

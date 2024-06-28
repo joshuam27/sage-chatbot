@@ -1,0 +1,38 @@
+{
+  "name": "428e1f12-0991-427b-9de2-c59fbc475e76",
+  "displayName": "swiftpoint.webtool.leaves.file #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to file a leave"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.leaves.file"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You cannot file a leave using the webtool. \n\nInstead, you will need to login to the device application. Afterwards, go to the Leave module. Tap [REQUEST LEAVE] button and then fill up the details. Once completed, tap [SEND]." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697012908,
+    "nanos": 550013000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

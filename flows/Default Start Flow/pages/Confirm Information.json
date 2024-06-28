@@ -1,0 +1,307 @@
+{
+  "name": "efaf419d-deae-4f02-9024-fa0ca6cedab6",
+  "displayName": "Confirm Information",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "EMAIL ADDRESS: $session.params.input_email\nINQUIRY/CONCERN: $session.params.input_concern\nPRODUCT: $session.params.input_product\nUSERNAME: $session.params.input_username \nCOMPANY: $session.params.input_company\nCONTACT NUMBER: $session.params.input_phone" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "quick_replies": [ {
+          "content_type": "text",
+          "payload": "Yes, correct",
+          "title": "Yes, correct"
+        }, {
+          "content_type": "text",
+          "payload": "Cancel",
+          "title": "Cancel"
+        }, {
+          "content_type": "text",
+          "payload": "Edit concern",
+          "title": "Edit concern"
+        }, {
+          "content_type": "text",
+          "payload": "Edit email",
+          "title": "Edit email"
+        }, {
+          "content_type": "text",
+          "payload": "Edit product",
+          "title": "Edit product"
+        }, {
+          "content_type": "text",
+          "payload": "Edit username",
+          "title": "Edit username"
+        }, {
+          "content_type": "text",
+          "payload": "Edit company",
+          "title": "Edit company"
+        }, {
+          "content_type": "text",
+          "payload": "Edit contact number",
+          "title": "Edit contact number"
+        } ],
+        "text": "To confirm, is this the correct information? If yes, this will be passed on to a live agent."
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for your time and patience. Please make sure that you are reachable via FB Chat and Email. One of our agents will be contacting you soon regarding your concern or inquiry. 😊\n\nWhile waiting, you may send an error report through your application if applicable (Go to Menu \u003e Utilities \u003e Send Error Report)." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Live Agent",
+    "name": "b184892a-44ca-43ae-95f4-f02e1e4f25c3"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please answer the following questions again and provide me with more details." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_email",
+        "value": null
+      }, {
+        "parameter": "input_concern",
+        "value": null
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "1b6e864e-ebef-478e-b1f9-bc26960eabc2"
+  }, {
+    "intent": "information.edit",
+    "condition": "$session.params.information_parameter = \"concern\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_concern",
+        "value": null
+      } ]
+    },
+    "targetPage": "Concern Prompt",
+    "name": "9bdcb22f-4b7b-4917-a54f-b4aff2762b58"
+  }, {
+    "intent": "information.edit",
+    "condition": "$session.params.information_parameter = \"email\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_email",
+        "value": null
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "e977e57d-3874-4d2c-8040-75c09f984251"
+  }, {
+    "intent": "information.edit",
+    "condition": "$session.params.information_parameter = \"product type\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": null
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "52508868-5502-42f0-9983-42844a548541"
+  }, {
+    "intent": "information.edit",
+    "condition": "$session.params.information_parameter = \"username\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_username",
+        "value": null
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "93e202d2-68ea-4741-a695-98e657ae8a7a"
+  }, {
+    "intent": "information.edit",
+    "condition": "$session.params.information_parameter = \"company\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_company",
+        "value": null
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "e79f30e6-7d80-4c1d-a21a-fb6f65688be2"
+  }, {
+    "intent": "information.edit",
+    "condition": "$session.params.information_parameter = \"contact number\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_phone",
+        "value": null
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "4859464b-aab7-48a3-9ac9-111b37a840dc"
+  }, {
+    "intent": "information.edit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "correct",
+            "title": "correct"
+          }, {
+            "content_type": "text",
+            "payload": "edit concern",
+            "title": "edit concern"
+          }, {
+            "content_type": "text",
+            "payload": "edit email",
+            "title": "edit email"
+          }, {
+            "content_type": "text",
+            "payload": "edit product",
+            "title": "edit product"
+          } ],
+          "text": "Please click on one of the buttons to edit the incorrect information. If the information is already correct then type or press correct"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "62282143-3b59-4837-aed3-f33c10f527d7"
+  }, {
+    "intent": "live.agent.cancel",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem, cancelling the request for a live agent." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Ask Again",
+    "name": "40b93221-775e-4e64-89f7-a101cb634713"
+  }, {
+    "condition": "$session.params.live_agent_done = true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "live_agent_done",
+        "value": false
+      } ]
+    },
+    "targetPage": "Ask Again",
+    "name": "eadde440-4480-45c3-925d-9583412cc7d6",
+    "description": "This route should be triggered when the user comes back from the Live Agent flow. The live_agent_done parameter is reset to false so that this route will not be triggered if the user goes back to this page coming from a page other than the Live Agent flow."
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0d7bad3f-d0b2-4763-8009-a292ed9c4478"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ac348f25-da0f-442a-a218-d48e26a5ca4b"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3ea81f74-22b2-41db-9eb9-10735479d127"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "37adede9-dff8-4192-b14a-b5178b5841de"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5dfd65c2-dc1a-447a-b632-22a736b5d923"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "cf08d170-8e0b-470a-8d1a-38227aed9541"
+  } ]
+}

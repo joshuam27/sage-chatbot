@@ -1,0 +1,38 @@
+{
+  "name": "3fb6daae-16f4-4e50-a906-2738574df6a5",
+  "displayName": "sfe.webtool.maintenance.doctor.deactivate",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I deactivate a doctor?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.maintenance.doctor.deactivate"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "1. Tap Doctor Maintenance\n2. Select the Doctor\n3. Tap Edit \n4. Tap Doctor Info\n5. Under Status, select Inactive\n6. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698991034,
+    "nanos": 226262000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}

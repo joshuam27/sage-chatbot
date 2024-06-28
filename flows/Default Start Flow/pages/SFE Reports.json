@@ -1,0 +1,61 @@
+{
+  "name": "c5a194f4-e8ad-41f4-abcf-6ef941f9eebe",
+  "displayName": "SFE Reports",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "intent.any",
+    "condition": "$session.params.reprompt_count \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "reports pls" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "609477af-b13b-4a40-b1d0-aa22952300d6"
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "copy from swiftpoint device" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": "$sys.func.ADD($session.params.reprompt_count , 1)"
+      } ]
+    },
+    "name": "aa745dbf-bd82-4202-86fd-5e2f26aeb582"
+  }, {
+    "intent": "sfe.report.request",
+    "triggerFulfillment": {
+    
+    },
+    "name": "cded5848-52fd-47d1-8d90-b330074678fa"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you please rephrase what you just said?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2f90a09a-9f37-4bd2-94ce-a134042e6014"
+  }, {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "152e2381-e420-4048-9fec-c3b4a1a62564"
+  } ],
+  "transitionRouteGroups": [ "FAQ SFE Reports" ]
+}

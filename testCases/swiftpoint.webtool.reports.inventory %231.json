@@ -1,0 +1,38 @@
+{
+  "name": "def6652f-214c-4db4-a1a4-a5d66fec82fe",
+  "displayName": "swiftpoint.webtool.reports.inventory #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Where can I check if there is a device user who is not submitting his inventory report?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.reports.inventory"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can check this under Reports Module. Select Posting Compliance and use the filter menu to drill down your search to the specific device user you want to check" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694141705,
+    "nanos": 938533000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

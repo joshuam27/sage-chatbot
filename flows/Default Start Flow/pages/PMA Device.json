@@ -1,0 +1,81 @@
+{
+  "name": "91d79851-a3f7-4992-8af3-eb43d9604ebc",
+  "displayName": "PMA Device",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "input.any",
+    "condition": "$session.params.reprompt_count \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "c1ff3617-c304-4f98-b049-bbafab5233ab"
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": "$sys.func.ADD($session.params.reprompt_count , 1)"
+      } ]
+    },
+    "name": "c235fe15-8ce3-40ee-90c8-1702065094eb"
+  }, {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "0822a910-c675-4d83-9ce9-4cd1589c6112"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I cannot understand" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "443e187f-2363-43f0-acb6-6e9c186a1af6"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I cannot understand" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3e96c259-65cb-4d20-b54e-6f67d43d1891"
+  } ],
+  "transitionRouteGroups": [ "FAQ PMA Device" ]
+}

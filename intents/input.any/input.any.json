@@ -1,0 +1,10 @@
+{
+  "name": "9f982a26-6159-4b0c-8a03-2bf1e5b86e06",
+  "displayName": "input.any",
+  "parameters": [ {
+    "id": "input_concern",
+    "entityType": "@sys.any"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 1
+}

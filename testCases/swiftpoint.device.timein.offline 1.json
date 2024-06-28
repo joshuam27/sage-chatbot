@@ -1,0 +1,38 @@
+{
+  "name": "cf344ade-fa41-4631-bfbe-877ff97ebf52",
+  "displayName": "swiftpoint.device.timein.offline 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Can I time in when offline?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.timein.offline"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Yes, you can still capture your time-in even if there is no available internet connection." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697524020,
+    "nanos": 469689000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

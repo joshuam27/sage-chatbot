@@ -1,0 +1,41 @@
+{
+  "name": "e1be055e-a516-4514-9521-ec2860985fa7",
+  "displayName": "Live Agent Conversation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "live.agent.return",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The chat with the live agent has now ended. Will be returning to the conversation with the chatbot." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "live_agent_done",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "f06482b9-7641-43aa-8746-24094a5a19da"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "04231864-fad5-4440-be09-4552edd5c576"
+  }, {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5991f7c7-ddfb-4d1a-9045-5bc74f0c323a"
+  } ],
+  "description": "Page where the chatbot will \"turn off\" / not respond to any user input. This will allow the support engineer to freely chat with the user."
+}

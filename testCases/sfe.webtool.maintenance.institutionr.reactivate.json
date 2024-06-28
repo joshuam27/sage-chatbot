@@ -1,0 +1,38 @@
+{
+  "name": "ef3bf5b3-be5f-4cef-b3e8-bafc35ace52c",
+  "displayName": "sfe.webtool.maintenance.institutionr.reactivate",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to activate an institution?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.maintenance.institutionr.reactivate"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "1. Tap Institution Maintenance\n2. Select the Institution\n3. Tap Edit\n4. Under Status, select Active\n5. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698991259,
+    "nanos": 226463000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "ec1b29a8-fd38-4cfa-b9b2-7f349cb6fc64",
+  "displayName": "SFE Device",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "d7ca10a0-4a5c-4605-b772-667801d4bbd5"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Selection",
+    "name": "c66aeef1-f007-4378-bbd5-724975aac283"
+  }, {
+    "intent": "input.any",
+    "condition": "$session.params.reprompt_count \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "0e87cffe-ec4e-4888-8f75-80da84541449"
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": "$sys.func.ADD($session.params.reprompt_count , 1)"
+      } ]
+    },
+    "name": "9265f7d5-ffd8-4e98-ae2f-25a441e84f9c"
+  }, {
+    "intent": "live.agent.proceed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for your time and patience. One of our agents will be contacting you soon regarding your concern or inquiry. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Live Agent Page",
+    "name": "118a0797-e7b9-457b-a31f-e376939d7250"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b77dbb5d-5fdb-480a-b0fd-33e7e0ff784b"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a20bccc4-ee1f-4f18-ae30-91fb7b76f51a"
+  }, {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "285ef5ca-5932-496a-a144-b6086cfc94cf"
+  } ],
+  "transitionRouteGroups": [ "FAQ SFE Device" ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "0af8859e-ac84-4ce0-952b-eb11e3fb48bb",
+  "displayName": "swiftpoint.device.upgrade #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Notice to upgrade"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.upgrade"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please make sure to SYNCHRONIZE successfully first before downloading the update from Playstore." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697167874,
+    "nanos": 521166000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

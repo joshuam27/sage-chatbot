@@ -1,0 +1,269 @@
+{
+  "name": "c82777fa-b1f7-4618-a866-d7a3bb593b21",
+  "displayName": "FAQ SwiftPoint Webtool",
+  "transitionRoutes": [ {
+    "intent": "swiftpoint.webtool.username",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Contact your Admin to ask for your user credentials" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "65392bd7-f6eb-41c6-818e-ed9e87a3748b"
+  }, {
+    "intent": "swiftpoint.webtool.password",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Contact your Admin to reset your password" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e6f6e32d-6bc4-40cd-a321-c06770e62061"
+  }, {
+    "intent": "swiftpoint.webtool.login.fail",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Double check your username and password. Make sure that there are no blank spaces in between. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "1acb33ea-ad11-46d8-86d6-e411ee50f1c0"
+  }, {
+    "intent": "swiftpoint.webtool.dashboard.performance",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "On the Dashboard, tap the Filter Icon (Inverted Triangle) seen at the upper-right corner and select the filter options applicable to what you wish to view." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "ce4dffc3-1d40-4f83-869b-05257910a619"
+  }, {
+    "intent": "swiftpoint.webtool.dashboard.attendance",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "There are 2 possible reasons:\n\n1. The device user hasn't synchronized his device yet\n2. He hasn't timed in yet in the SwiftPoint app" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "fa0c794f-0ad0-4d39-8aa3-b2ad4bcd447e"
+  }, {
+    "intent": "swiftpoint.webtool.callachievement",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Call Achievement rating includes the stores visited that were not part of the itinerary of the device user divided by the total no. of stores that were part of his itinerary.\n\nYou can tap the bar graph per device user to see which stores were planned or unplanned." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "bca6db97-7b35-4791-985f-c18864567727"
+  }, {
+    "intent": "swiftpoint.webtool.user.remove",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Follow these simple steps \n1. Go to maintenance. \n2. Select Device User Maintenance. \n3. Use the search box to look for the device user. \n4. Untick the Active checkbox" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "8b4b9953-7dcc-40ba-8851-c6ddf62c4f6c"
+  }, {
+    "intent": "swiftpoint.webtool.sku.create",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can do this by \n1. Going to Maintenance\n2. Item \n3. Add the item details \n4. Save\n\nFor bulk upload\n1. Tap Upload\n2. Item Upload\n3. Download the template \u0026 fill it out\n4. Upload the template" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "658acea3-5188-46ce-ab09-19465d565f8c"
+  }, {
+    "intent": "swiftpoint.webtool.store.temporary",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If the store is already part of the store masterlist, you can:\n1. Tap Maintenance\n2. Select Device User Maintenance\n3. Search for the name of the Device User \n4. Add Temporary store\n5. Select the store you want to add as a temporary store\n6. Input the Effectivity Date and \n7. Then Save" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "a7a550b9-b84b-4150-bc12-00fd58a6294a"
+  }, {
+    "intent": "swiftpoint.webtool.reports.inventory",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can check this under Reports Module. Select Posting Compliance and use the filter menu to drill down your search to the specific device user you want to check" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "2e5aa966-f435-4fe7-b0ef-3f87de9ec372"
+  }, {
+    "intent": "swiftpoint.webtool.reports.itinerary",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can check this under Reports Module. Select Itinerary Compliance and use the filter menu to drill down your search to the specific device user you want to check" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "4e7c5135-1196-44e4-a5a9-dbb031dde0fc"
+  }, {
+    "intent": "swiftpoint.webtool.reports.oos",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Yes! you can check the OOS Report or if you can also check the PEDA reports\n\n*PEDA reports are on a separate subscription basis" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "6c294c39-4d2d-4879-83d7-61a88b6480c8"
+  }, {
+    "intent": "swiftpoint.webtool.access.location",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You may access it using the following link: https://edtrplus.eschost2.com/" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "24fd07a4-0e0b-4015-ae5f-10396dfaf030"
+  }, {
+    "intent": "swiftpoint.webtool.attendance.summary.instructions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You may login to the web tool and go to Dashboard Page. Each widget or graph has an EXPORT button allowing you to download the summary or trend." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "1f56005f-3b42-42da-8271-b1af497d8ae0"
+  }, {
+    "intent": "swiftpoint.webtool.attendance.report.instructions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You may login to the web tool and go to Report \u003e Attendance Report Page. Set filter (if applicable), and then click EXPORT icon located at the upper-rightmost part of the page." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "d7b7fc8c-c550-4bd5-b4a7-32699c95cb8a"
+  }, {
+    "intent": "swiftpoint.webtool.general.info",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "SwiftPoint is an application designed for the management of both principal and agency, which enables them to keep track of the field forces' attendance and activities, and monitor inventory in real-time across all stores.\n\nRevolutionize your workforce management with our app!\n- Effortless Attendance: Say goodbye to manual tracking. Easily record time-in, time-out, breaks, leaves, itineraries, and work schedule changes.\n- Store Data Fields: Take control of your store performance. Track inventory, availability, Share-of-Shelf, freshness, sellout, and define carried items per store effortlessly.\n- Trade Activities Monitoring: Stay one step ahead of the competition. Monitor promo item allocation, implementation, and keep tabs on competitor activities.\n- Customizable Forms: Streamline your paperwork and administrative tasks. Create tailored survey questions for expense reports, reimbursements, and more." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "48e40d39-201c-4634-94b4-56b7dab48bdf"
+  }, {
+    "intent": "swiftpoint.webtool.leaves.file",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You cannot file a leave using the webtool. \n\nInstead, you will need to login to the device application. Afterwards, go to the Leave module. Tap [REQUEST LEAVE] button and then fill up the details. Once completed, tap [SEND]." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "b1f41c59-a8a8-4b17-8a97-bc2076f3a5e5"
+  }, {
+    "intent": "swiftpoint.webtool.store.deactivate",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly ensure that you are currently logged in: \n\n1. Go to Store Maintenance\n2. Select the Store and tap the [EDIT] or pencil icon.\n3. Scroll down the right pane and untick \"ACTIVE\" checkbox.\n4. Tap [UPDATE]" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "c823e110-c11f-4485-98b9-834462eda3d3"
+  }, {
+    "intent": "swiftpoint.webtool.schedule.upload",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly ensure that you are currently logged in: \n\n1. Go to User Maintenance\n2. Select the User and tap the [Work Schedule].\n3. Tap Options Menu. Select [DOWNLOAD TEMPLATE] and apply and save changes to the file.\n4. Tap [UPDATE]\n5. Tap [UPLOAD TEMPLATE] and select the file you have edited in step #4." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "4c8a5137-7535-4e5f-9307-839f8cd3bbae"
+  }, {
+    "intent": "swiftpoint.webtool.schedule.edit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly ensure that you are currently logged in: \n\n1. Go to User Maintenance\n2. Tap WORK SCHEDULE tab\n3. Select a date to edit\n4. Tap [Change Time]\n5. Edit details and tap [UPDATE]" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "eb4050b8-aa3f-4d59-95ff-48b2272a11f5"
+  }, {
+    "intent": "swiftpoint.webtool.attendance.missing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly ensure you can synchronize or follow the steps below to re-sync the app. \n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. Tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"Login Online\" box checked.\n7. Refresh the webtool retry search criteria. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "c2a62ce7-575c-4a82-b744-543997e28af1"
+  }, {
+    "intent": "escience.general.info",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "eScience grew out of a passion for innovation and mobile technology. To learn more about us, please visit our website at: https://www.electronicscience.com/index.html" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "ef5193f5-e5d5-44f4-a8f8-afca15d8ffd5"
+  } ]
+}

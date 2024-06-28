@@ -1,0 +1,38 @@
+{
+  "name": "bb1ee632-a406-479b-adba-d05ceec10b4e",
+  "displayName": "swiftpoint.webtool.store.deactivate #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How can I deactivate store"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.store.deactivate"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly ensure that you are currently logged in: \n\n1. Go to Store Maintenance\n2. Select the Store and tap the [EDIT] or pencil icon.\n3. Scroll down the right pane and untick \"ACTIVE\" checkbox.\n4. Tap [UPDATE]" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697012940,
+    "nanos": 686261000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

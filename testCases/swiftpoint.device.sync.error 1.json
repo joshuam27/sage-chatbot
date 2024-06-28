@@ -1,0 +1,38 @@
+{
+  "name": "104cadd4-210d-4e03-af9b-b06389401dc9",
+  "displayName": "swiftpoint.device.sync.error 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Synchronization failed"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.sync.error"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you cannot sync successfully, follow these steps: \n\n1. Restart the device, and retry sync. \n2. Go to Utilities \u003e Check Connectivity\n3. If the Average Latency value is 400ms and up, this is a possible indication of slow connectivity. Try to use another internet connection or mobile data.\n     3.1. If the Average Latency value is zero, it means you do not have an internet connection.\n     3.2. If the Average Latency value is between 1 ms and 400 ms, retry sync.\n     3.3. If all fails, make a screenshot of the error and report it via email (edtrsupport@electronicscience.net)" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697523256,
+    "nanos": 287382000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

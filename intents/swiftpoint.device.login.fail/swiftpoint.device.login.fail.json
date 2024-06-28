@@ -1,0 +1,10 @@
+{
+  "name": "57c3caf9-97a6-4a26-9a9a-bbb16d7b3cca",
+  "displayName": "swiftpoint.device.login.fail",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

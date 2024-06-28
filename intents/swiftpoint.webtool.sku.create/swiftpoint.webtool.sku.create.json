@@ -1,0 +1,10 @@
+{
+  "name": "155fc90b-5217-4995-9224-541a8978a4c0",
+  "displayName": "swiftpoint.webtool.sku.create",
+  "parameters": [ {
+    "id": "sku",
+    "entityType": "@sku"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

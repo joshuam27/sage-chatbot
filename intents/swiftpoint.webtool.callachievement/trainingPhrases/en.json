@@ -1,0 +1,14 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Why does the Call Achievement rate exceed ",
+      "auto": true
+    }, {
+      "text": "100%",
+      "parameterId": "percentage",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

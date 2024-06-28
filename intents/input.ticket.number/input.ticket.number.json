@@ -1,0 +1,10 @@
+{
+  "name": "1bf9df85-83de-4dbc-9121-c8db7ac1a3b5",
+  "displayName": "input.ticket.number",
+  "parameters": [ {
+    "id": "input_ticket_number",
+    "entityType": "@sys.number-sequence"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

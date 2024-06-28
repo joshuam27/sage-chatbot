@@ -1,0 +1,7 @@
+{
+  "entities": [ {
+    "value": "login",
+    "synonyms": [ "log in", "login", "sign in" ],
+    "languageCode": "en"
+  } ]
+}

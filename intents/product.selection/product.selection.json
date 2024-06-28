@@ -1,0 +1,10 @@
+{
+  "name": "15c8eb58-54b3-4292-be8e-7e68312ab57b",
+  "displayName": "product.selection",
+  "parameters": [ {
+    "id": "input_product",
+    "entityType": "@product_type"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

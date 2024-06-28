@@ -1,0 +1,10 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "An unanswerable question by the chatbot",
+      "parameterId": "input_concern"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

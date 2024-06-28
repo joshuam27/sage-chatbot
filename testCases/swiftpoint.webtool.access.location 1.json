@@ -1,0 +1,38 @@
+{
+  "name": "6f34c222-0d14-497e-a3b9-12acd41d1f54",
+  "displayName": "swiftpoint.webtool.access.location 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How can I access the webtool?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.access.location"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You may access it using the following link: https://edtrplus.eschost2.com/" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697525130,
+    "nanos": 187729000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

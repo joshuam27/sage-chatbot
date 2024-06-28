@@ -1,0 +1,38 @@
+{
+  "name": "d1dd017f-9513-4964-bc0d-a328bbf6902e",
+  "displayName": "swiftpoint.device.timein.store #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How can I time in to a store that is not part of the Store list in my SwiftPoint?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.timein.store"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You cannot time in to a Store that is not part of the list of Stores in your SwiftPoint. Contact your Admin to have the store added to your Store list." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694080743,
+    "nanos": 830344000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "name": "c5de0031-a567-494b-a6c5-7866cef63d23",
+  "displayName": "swiftpoint.device.sync.error",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ESC Privacy Policy and T\u0026C",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "[DEVELOPMENT]\nBefore we start, please visit the data privacy and terms of usage links below and make sure to read and accept them before proceeding.\n\nhttps://www.electronicscience.com/privacy.html\nhttps://www.electronicscience.com/terms.html\n\nDo you understand and agree to the terms of usage and data privacy provisions of this chat system?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Product Selection",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for accepting" ]
+      }, {
+        "text": [ "Which among these products do you have a question or concern with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "swiftpoint device"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "product.selection"
+      },
+      "currentPage": {
+        "name": "SwiftPoint Device",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Got it! Please let me know your concern about the SwiftPoint Device application. Or you may also check the available FAQs." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "sync failed"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.sync.error"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you cannot sync successfully, follow these steps: \n\n1. Restart the device, and retry sync. \n2. Go to Utilities \u003e Check Connectivity\n3. If the Average Latency value is 400ms and up, this is a possible indication of slow connectivity. Try to use another internet connection or mobile data.\n     3.1. If the Average Latency value is zero, it means you do not have an internet connection.\n     3.2. If the Average Latency value is between 1 ms and 400 ms, retry sync.\n     3.3. If all fails, make a screenshot of the error and report it via email (edtrsupport@electronicscience.net)" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Ask Again",
+        "flow": "Default Start Flow"
+      },
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Conversation End",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1719371869,
+    "nanos": 367187000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

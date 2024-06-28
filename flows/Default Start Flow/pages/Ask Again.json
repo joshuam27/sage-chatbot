@@ -1,0 +1,169 @@
+{
+  "name": "adba2d28-928a-4241-ab33-4bd425abace4",
+  "displayName": "Ask Again",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "quick_replies": [ {
+          "content_type": "text",
+          "payload": "Yes option",
+          "title": "Yes"
+        }, {
+          "content_type": "text",
+          "payload": "No option",
+          "title": "No"
+        } ],
+        "text": "Is there anything else that I can help you with today?"
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Selection",
+    "name": "ba4dce8d-a5f4-456b-b127-7403b63340a5"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "427506a3-95a9-4fb1-9912-6cad7409175c"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b3c9c285-7ab3-47a2-9e46-16e666db963a"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "64fb4a09-d371-4fb1-bd2b-581dd90ab873"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9841e132-b19f-463e-8c15-07641d9f9a75"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9467c441-ca92-4f39-9e0f-8def6666bef4"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1beb02ed-5286-4404-90b3-edc23f8c23e2"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9ae0d3ed-ba10-46cb-b2ec-0cfe40612e38"
+  }, {
+    "event": "FACEBOOK_MEDIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          } ],
+          "text": "Please answer with Yes or No."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "aef4965d-3ce2-4c45-b3fd-d8f95940ef8f"
+  } ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "e805e4e8-2e30-4fa1-bb8a-d0ebc41cfd87",
+  "displayName": "swiftpoint.webtool.general.info 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Tell me about swiftpoint"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.general.info"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "SwiftPoint is an application designed for the management of both principal and agency, which enables them to keep track of the field forces' attendance and activities, and monitor inventory in real-time across all stores.\n\nRevolutionize your workforce management with our app!\n- Effortless Attendance: Say goodbye to manual tracking. Easily record time-in, time-out, breaks, leaves, itineraries, and work schedule changes.\n- Store Data Fields: Take control of your store performance. Track inventory, availability, Share-of-Shelf, freshness, sellout, and define carried items per store effortlessly.\n- Trade Activities Monitoring: Stay one step ahead of the competition. Monitor promo item allocation, implementation, and keep tabs on competitor activities.\n- Customizable Forms: Streamline your paperwork and administrative tasks. Create tailored survey questions for expense reports, reimbursements, and more." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697525310,
+    "nanos": 952685000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

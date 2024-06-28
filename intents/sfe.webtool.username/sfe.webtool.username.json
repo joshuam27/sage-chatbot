@@ -1,0 +1,10 @@
+{
+  "name": "a6a49219-297d-4807-99bf-d5ab1cef27a6",
+  "displayName": "sfe.webtool.username",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 6
+}

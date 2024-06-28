@@ -1,0 +1,41 @@
+{
+  "name": "2888df76-2ff1-4362-b597-9027e02c6c99",
+  "displayName": "swiftpoint.webtool.login.fail #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I cannot login"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "login": "login"
+      },
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.login.fail"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Double check your username and password. Make sure that there are no blank spaces in between. " ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694139768,
+    "nanos": 122896000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

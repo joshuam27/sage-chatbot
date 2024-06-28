@@ -1,0 +1,38 @@
+{
+  "name": "8dcab385-af7e-43bd-a7cb-609da6133973",
+  "displayName": "swiftpoint.device.sync.instructions 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I sync my swiftpoint"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.sync.instructions"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Upon successful login, tap the Options (3 dots) icon \u003e Synchronize. Make sure that you have stable internet connection when using this feature." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697523133,
+    "nanos": 532101000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

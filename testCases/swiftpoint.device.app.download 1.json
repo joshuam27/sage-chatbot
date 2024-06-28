@@ -1,0 +1,38 @@
+{
+  "name": "f3a081a9-73c8-4bab-9cbb-75573bd8cb9a",
+  "displayName": "swiftpoint.device.app.download 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Where can I download the app?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.app.download"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "FOR ANDROID:\nGo to Play Store \u003e Search for Swiftpoint\n\nFOR IOS:\nYou may search \"pocketwise edtr+\" in App Store or click this link: https://apps.apple.com/ph/app/pocketwise-edtr/id1486508682" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697524191,
+    "nanos": 247549000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

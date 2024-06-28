@@ -1,0 +1,34 @@
+{
+  "name": "31a4df00-8a25-4de4-aeba-be064760c1e1",
+  "displayName": "Conversation End",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "statement.thanks",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You're welcome, I'm glad that I could be of assistance! 😊", "You're welcome, feel free to chat with us again. 😊", "You're welcome, please do not hesitate to reach out again. 😊", "You're welcome, always happy to help! 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "46d71bbc-5c17-4c98-a577-fcde71fdd1cd"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Product Selection",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "af877137-0bc8-44f0-8d61-b882e2b9c89f"
+  }, {
+    "targetPage": "Product Selection",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e6962cfc-9bfc-4325-ba9d-39b5d460a464"
+  } ]
+}

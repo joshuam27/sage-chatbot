@@ -1,0 +1,160 @@
+{
+  "name": "fd4e1cc5-867f-4b24-ba65-0c64c02ca3ee",
+  "displayName": "sfe.device.calls.error",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ESC Privacy Policy and T\u0026C",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "[DEVELOPMENT]\nBefore we start, please visit the data privacy and terms of usage links below and make sure to read and accept them before proceeding.\n\nhttps://www.electronicscience.com/privacy.html\nhttps://www.electronicscience.com/terms.html\n\nDo you understand and agree to the terms of usage and data privacy provisions of this chat system?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Product Selection",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for accepting" ]
+      }, {
+        "text": [ "Which among these products do you have a question or concern with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "sfe device"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "product.selection"
+      },
+      "currentPage": {
+        "name": "SFE Device",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Got it! Please let me know your concern about the SFE Device application. " ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "error in sending calls and synchronization"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.device.calls.error"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please try the following procedure to send the calls:\n\n1. Go to ACP.\n2. Search the unsent call.\n3. Tap/Open the call.\n4. Press the 'Send' button.\n5. Wait for the successful message.\n\nIf the error is persistent, please chat with one of our agents." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Ask Again",
+        "flow": "Default Start Flow"
+      },
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Conversation End",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1719286675,
+    "nanos": 490043000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

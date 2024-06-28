@@ -1,0 +1,10 @@
+{
+  "name": "088d7b5c-89b6-4c3c-bc69-be00154249b1",
+  "displayName": "swiftpoint.device.crashing",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 2
+}

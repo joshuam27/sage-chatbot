@@ -1,0 +1,38 @@
+{
+  "name": "2a500a93-98d7-4fe4-8139-0ef2e684535d",
+  "displayName": "swiftpoint.device.timein.instructions 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Can you tell me how to time in"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.timein.instructions"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please follow these steps: \n\n1. Press “Tap here to select store”\nand choose a store from the list\n2. Make sure that your schedule is\ncorrect\n3. Tap “Add Picture” to take a picture\n4. Select Reason (Optional)\n5. Enter Remarks (Optional)\n6. Tap TIME IN and tap YES on the\nConfirmation box" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697521801,
+    "nanos": 856467000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

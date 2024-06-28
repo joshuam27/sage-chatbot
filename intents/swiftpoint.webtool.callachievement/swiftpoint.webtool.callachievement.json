@@ -1,0 +1,10 @@
+{
+  "name": "85214d10-82be-4488-b7ef-af9d55f60be2",
+  "displayName": "swiftpoint.webtool.callachievement",
+  "parameters": [ {
+    "id": "percentage",
+    "entityType": "@sys.percentage"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 1
+}

@@ -1,0 +1,113 @@
+{
+  "name": "98882065-3a1a-48b9-80b5-38edbd80f861",
+  "displayName": "FAQ SFE Webtool",
+  "transitionRoutes": [ {
+    "intent": "sfe.webtool.password",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You may opt to utilize the \"Forgot Password?\" option to retrieve the new temporary password and unlock the account at the same time.\n\nHere are the instructions:\n1. Tap the 'Forgot Password?' option.\n2. The system will request the username and e-mail address you are using. Please note that it should match the one registered in our database to be able to continue. \n3. Tap \"Send to Email Address\" once finalized.\n4. Should there be no error, you may now check the temporary password sent to your email account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "2e636cab-3415-40fd-a131-3b0b9b447ab6"
+  }, {
+    "intent": "sfe.webtool.reports.doctorsignature",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Once successfully logged in, go to REPORTS \u003e DOCTOR SIGNATURE module." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "7235cb66-3e95-49f4-a11d-f34a066fe5c8"
+  }, {
+    "intent": "sfe.webtool.callrate.different",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "This is due to unsent transactions from your device. Please check the outbox and send your pending transactions" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "428e5a44-37e2-427a-893e-0300fea2e58e"
+  }, {
+    "intent": "sfe.webtool.username",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Contact your Admin to ask for your user credentials" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "ac5e4d53-a85a-4fe9-b892-fcd271b14898"
+  }, {
+    "intent": "sfe.webtool.login",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Double check your username and password. Make sure that there are no blank spaces in between. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "b662be1b-14bd-4c0b-bd79-4800f80a6e24"
+  }, {
+    "intent": "sfe.webtool.maintenance.doctor.deactivate",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "1. Tap Doctor Maintenance\n2. Select the Doctor\n3. Tap Edit \n4. Tap Doctor Info\n5. Under Status, select Inactive\n6. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e4d965d5-ebcd-4a51-a5ea-0390584c9132"
+  }, {
+    "intent": "sfe.webtool.maintenance.doctor.reactivate",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "1. Tap Doctor Maintenance\n2. Select the Doctor\n3. Tap Edit \n4. Tap Doctor Info\n5. Under Status, select Active\n6. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "75878ea2-078d-4d52-b0c9-f2e26700cb60"
+  }, {
+    "intent": "sfe.webtool.maintenance.institution.deactivate",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "1. Tap Institution Maintenance\n2. Select the Institution\n3. Tap Edit\n4. Under Status, select Inactive\n5. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "8a6bda3d-ea2a-43db-915d-9912166e1552"
+  }, {
+    "intent": "sfe.webtool.maintenance.institutionr.reactivate",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "1. Tap Institution Maintenance\n2. Select the Institution\n3. Tap Edit\n4. Under Status, select Active\n5. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "af063592-e670-4131-8f40-71c05745a9ca"
+  } ]
+}

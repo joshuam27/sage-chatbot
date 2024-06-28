@@ -1,0 +1,210 @@
+{
+  "name": "364e9af6-49e0-4619-accf-77310927e7f0",
+  "displayName": "SwiftPoint Device",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "attachment": {
+          "payload": {
+            "elements": [ {
+              "buttons": [ {
+                "payload": "Forgot username",
+                "title": "Forgot username",
+                "type": "postback"
+              }, {
+                "payload": "Forgot password",
+                "title": "Forgot password",
+                "type": "postback"
+              }, {
+                "payload": "I cannot login",
+                "title": "I cannot login",
+                "type": "postback"
+              } ],
+              "subtitle": "Frequently asked questions about SwiftPoint Device.",
+              "title": "SwiftPoint Device FAQs"
+            }, {
+              "buttons": [ {
+                "payload": "How to file leave",
+                "title": "How to file leave",
+                "type": "postback"
+              }, {
+                "payload": "How to time in",
+                "title": "How to time in",
+                "type": "postback"
+              }, {
+                "payload": "How to time out",
+                "title": "How to time out",
+                "type": "postback"
+              } ],
+              "subtitle": "Frequently asked questions about SwiftPoint Device.",
+              "title": "SwiftPoint Device FAQs"
+            }, {
+              "buttons": [ {
+                "payload": "Exit Chat",
+                "title": "Exit Chat",
+                "type": "postback"
+              } ]
+            } ],
+            "template_type": "generic"
+          },
+          "type": "template"
+        }
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "fdebbc07-97ba-4c4e-9684-671bca2bacec"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": null
+      } ]
+    },
+    "targetPage": "Product Selection",
+    "name": "20fc3cb0-630d-4e5d-9b82-09b3b4796a4b"
+  }, {
+    "intent": "input.any",
+    "condition": "$session.params.reprompt_count \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "d543b4eb-cce5-4a8f-906d-0072305ab372",
+    "description": "acts as a no match 2 event\n\nThere are 2 \"input.any\" routes for each application page (e.g. swiftpoint device, swiftpoint webtool). This \"input.any\" route which includes the condition $session.params.reprompt_count \u003e= 1 should come before the other \"input.any\" route in the ordering of routes. This is to ensure that the condition gets checked."
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": "$sys.func.ADD($session.params.reprompt_count , 1)"
+      } ]
+    },
+    "name": "a437d1a5-62f5-41a0-b1c1-4cfa5dfd5371",
+    "description": "acts as a no match 1 event"
+  }, {
+    "intent": "live.agent.proceed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for your time and patience. One of our agents will be contacting you soon regarding your concern or inquiry. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Live Agent Page",
+    "name": "9d6204ef-a60c-4440-bac5-5a3cb934b86b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you further clarify the question or concern, or can you please give me more details?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "No more questions",
+            "title": "No more questions"
+          } ],
+          "text": "Or let me know if you have no more questions"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4ce76c6f-8329-4647-b3ae-001c55a162ec"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address and concern so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "swiftpoint device"
+      } ]
+    },
+    "name": "5d4d10f2-5fe0-45b5-b602-5847b9953d60"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you rephrase the question for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "No more questions",
+            "title": "No more questions"
+          } ],
+          "text": "Or let me know if you have no more questions"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "4438e25a-699c-4042-a60a-8daff2b31f46"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address and concern so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "swiftpoint device"
+      } ]
+    },
+    "name": "085cfe2e-f918-4c0e-8118-b4ebedf2e534"
+  } ],
+  "transitionRouteGroups": [ "FAQ SwiftPoint Device" ],
+  "description": "The input.any routes serve as \"no-match\" events. input.any is used so that the user's input for concern could be saved."
+}

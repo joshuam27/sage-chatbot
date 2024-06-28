@@ -1,0 +1,53 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Why ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " is not working",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Login",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " is failing",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I cannot ",
+      "auto": true
+    }, {
+      "text": "login",
+      "parameterId": "login",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I cannot ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": ". What should I do?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

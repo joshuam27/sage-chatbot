@@ -1,0 +1,196 @@
+{
+  "name": "db3e5087-5ae7-4da5-9e27-a77e98a8ed12",
+  "displayName": "Transfer To Agent",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "quick_replies": [ {
+          "content_type": "text",
+          "payload": "Yes option",
+          "title": "Yes"
+        }, {
+          "content_type": "text",
+          "payload": "No option",
+          "title": "No"
+        } ],
+        "text": "Will transfer this conversation to a live agent. Do you have an existing ticket number for your concern?"
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ticket Number Prompt",
+    "name": "c22f5d5c-5227-4877-81db-e05fe14251bc"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Since you do not have an existing ticket, kindly provide the following information so that we may verify your user account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Concern Prompt",
+    "name": "ee8e2356-2358-4c17-aa32-4b974bfd03e3"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Selection",
+    "name": "26f07438-0798-42ec-8923-562a25eb03b3"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Do you have an existing ticket number for your concern? Please answer with yes or no."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f9b34e9c-360f-4b08-97cc-616172a43f34"
+  }, {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Do you have an existing ticket number for your concern? Please answer with yes or no."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f5bdbd49-b139-4048-8abc-6a820da45e8f"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Do you have an existing ticket number for your concern? Please answer with yes or no."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3de3bf3f-d011-4198-953c-f8938afee4bc"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Do you have an existing ticket number for your concern? Please answer with yes or no."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "39425d32-6f1a-4b5a-a220-cd2951f24b41"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d57d2879-6b6b-4efe-81a0-161d52fc0d32"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "dfc38651-d48d-467a-a2d5-201a83ee22bf"
+  }, {
+    "event": "FACEBOOK_MEDIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes",
+            "title": "Yes"
+          }, {
+            "content_type": "text",
+            "payload": "No",
+            "title": "No"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Do you have an existing ticket number for your concern? Please answer with yes or no."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a19a22ed-ac7f-47e3-94f3-d2df83d6ea99"
+  } ]
+}

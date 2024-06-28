@@ -1,0 +1,41 @@
+{
+  "name": "9ac6396b-ca29-4ad7-b057-168dce11e8e6",
+  "displayName": "swiftpoint.webtool.callachievement #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Why does the Call Achievement rate exceed 100%?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "percentage": "100%"
+      },
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.callachievement"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Call Achievement rating includes the stores visited that were not part of the itinerary of the device user divided by the total no. of stores that were part of his itinerary.\n\nYou can tap the bar graph per device user to see which stores were planned or unplanned." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694140527,
+    "nanos": 898005000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

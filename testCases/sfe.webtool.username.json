@@ -1,0 +1,38 @@
+{
+  "name": "6050ad62-6166-4704-a152-6cb17eab84b5",
+  "displayName": "sfe.webtool.username",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I forgot my username"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.username"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Contact your Admin to ask for your user credentials" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698990656,
+    "nanos": 469392000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}

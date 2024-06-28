@@ -1,0 +1,38 @@
+{
+  "name": "288cfcfc-c4f0-4e09-bf03-cda3fa5b2cef",
+  "displayName": "sfe.webtool.callrate.different",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Why is the call rate on the webtool different from device?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.callrate.different"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This is due to unsent transactions from your device. Please check the outbox and send your pending transactions" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698991012,
+    "nanos": 872771000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "d1a2f792-3ab1-41a3-a0c1-a97546479417",
+  "displayName": "swiftpoint.device.sku.hide #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to hide not carried items per store? "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.sku.hide"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you can see the Not Carried Module, you may use it to tag SKUs as NOT CARRIED by following this procedure: \n1. Go to 'Not Carried' module. \n2. Choose a store\n3. Select SKUs and toggle switch (set to OFF) \n4. Synchronize to save changes" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694679300,
+    "nanos": 961424000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

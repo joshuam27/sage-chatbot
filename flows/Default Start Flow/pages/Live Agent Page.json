@@ -1,0 +1,33 @@
+{
+  "name": "bae02cf8-7a81-44c3-a03b-fb7d5321ab82",
+  "displayName": "Live Agent Page",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "live.agent.return",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The chat with the live agent has now ended. Will be returning to the conversation with the chatbot." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Ask Again",
+    "name": "df19b63c-8710-487d-a0dc-c258fb222c2b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8e7d0d8a-dd73-4623-a2ba-853d309f7bef"
+  }, {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "ce6d9e8b-27fd-4f1f-8a76-15497f694883"
+  } ]
+}

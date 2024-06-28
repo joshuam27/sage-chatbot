@@ -1,0 +1,303 @@
+{
+  "name": "5b720958-c84e-4584-859f-8db1e10bf201",
+  "displayName": "Information Prompt",
+  "form": {
+    "parameters": [ {
+      "displayName": "input_product",
+      "required": true,
+      "entityType": "@product_type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Which among these products do you have a question or concern with?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "attachment": {
+                "payload": {
+                  "elements": [ {
+                    "buttons": [ {
+                      "payload": "SwiftPoint Device",
+                      "title": "SwiftPoint Device",
+                      "type": "postback"
+                    }, {
+                      "payload": "SwiftPoint Webtool",
+                      "title": "SwiftPoint Webtool",
+                      "type": "postback"
+                    } ],
+                    "subtitle": "For concerns about the SwiftPoint application.",
+                    "title": "SwiftPoint"
+                  }, {
+                    "buttons": [ {
+                      "payload": "SFE Device",
+                      "title": "SFE Device",
+                      "type": "postback"
+                    }, {
+                      "payload": "SFE Webtool",
+                      "title": "SFE Webtool",
+                      "type": "postback"
+                    } ],
+                    "subtitle": "For concerns about the SFE application.",
+                    "title": "SFE"
+                  }, {
+                    "buttons": [ {
+                      "payload": "Others",
+                      "title": "Others",
+                      "type": "postback"
+                    } ],
+                    "subtitle": "Select this option for concerns about products not listed.",
+                    "title": "Others"
+                  }, {
+                    "buttons": [ {
+                      "payload": "Exit Chat",
+                      "title": "Exit Chat",
+                      "type": "postback"
+                    } ]
+                  } ],
+                  "template_type": "generic"
+                },
+                "type": "template"
+              }
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I cannot seem to understand. Please type the correct option name or select an option from the menu." ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "attachment": {
+                  "payload": {
+                    "elements": [ {
+                      "buttons": [ {
+                        "payload": "SwiftPoint Device",
+                        "title": "SwiftPoint Device",
+                        "type": "postback"
+                      }, {
+                        "payload": "SwiftPoint Webtool",
+                        "title": "SwiftPoint Webtool",
+                        "type": "postback"
+                      } ],
+                      "subtitle": "For concerns about the SwiftPoint application.",
+                      "title": "SwiftPoint"
+                    }, {
+                      "buttons": [ {
+                        "payload": "SFE Device",
+                        "title": "SFE Device",
+                        "type": "postback"
+                      }, {
+                        "payload": "SFE Webtool",
+                        "title": "SFE Webtool",
+                        "type": "postback"
+                      } ],
+                      "subtitle": "For concerns about the SFE application.",
+                      "title": "SFE"
+                    }, {
+                      "buttons": [ {
+                        "payload": "Others",
+                        "title": "Others",
+                        "type": "postback"
+                      } ],
+                      "subtitle": "Select this option for concerns about products not listed.",
+                      "title": "Others"
+                    }, {
+                      "buttons": [ {
+                        "payload": "Exit Chat",
+                        "title": "Exit Chat",
+                        "type": "postback"
+                      } ]
+                    } ],
+                    "template_type": "generic"
+                  },
+                  "type": "template"
+                }
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4c9cf731-ef3b-4d79-85f9-6f458c7c21df"
+        }, {
+          "targetPage": "Ask Again",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I cannot seem to get the product that you have inputted, please feel free to explore other options. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "446c80e9-36f4-4980-a8a1-087f16611631"
+        } ]
+      }
+    }, {
+      "displayName": "input_email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter the email address that you use to login to the application." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "quick_replies": [ {
+                  "content_type": "text",
+                  "payload": "Exit",
+                  "title": "Exit"
+                }, {
+                  "content_type": "text",
+                  "payload": "Main Menu",
+                  "title": "Main Menu"
+                } ],
+                "text": "The email seems to be invalid. Could you please type your email address again? Or you may select an option below"
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "942476c7-fd76-4858-a347-36cacd361890"
+        }, {
+          "targetPage": "Ask Again",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry I cannot seem to get your email, please feel free to explore other options. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c263147e-fcdb-4bb6-8c5e-bcd807810cbd"
+        } ]
+      },
+      "redact": true
+    }, {
+      "displayName": "input_concern",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please provide the details of your concern or inquiry." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "input_username",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter the username that you use to login to the application. Enter N/A if none." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "input_company",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter your company name." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "input_phone",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter your contact/phone number." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "bcbb1958-d156-442f-bbdd-4242840de4f0"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Selection",
+    "name": "aa64412d-e71f-4f19-8e1c-77c15d40d0ed"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "information_parameter",
+        "value": null
+      } ]
+    },
+    "targetPage": "Confirm Information",
+    "name": "e5b68f40-2a16-4c3a-bb92-25052a4716d3",
+    "description": "page.params.status = \"FINAL\" means that this route will only be triggered after all parameters have been filled"
+  } ],
+  "eventHandlers": [ {
+    "event": "FACEBOOK_MEDIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I cannot seem to understand. Could you please rephrase the message? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "fe892599-e377-4bae-bde4-befedc7fe3da"
+  } ],
+  "description": "If the chatbot is unable to answer any of the user's questions, it may redirect to this information prompt where it asks for the user's information such as email and username."
+}

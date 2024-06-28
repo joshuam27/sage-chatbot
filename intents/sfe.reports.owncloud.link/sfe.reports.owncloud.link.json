@@ -1,0 +1,10 @@
+{
+  "name": "b89568f5-4329-4ec5-ba02-4e5f79164c2b",
+  "displayName": "sfe.reports.owncloud.link",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

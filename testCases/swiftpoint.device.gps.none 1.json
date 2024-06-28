@@ -1,0 +1,38 @@
+{
+  "name": "b8709e91-1fb5-448b-bb49-1f3d059cd4df",
+  "displayName": "swiftpoint.device.gps.none 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I keep on getting zero GPS Location"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.gps.none"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you keep on getting zero coordinates or 0,0 location, you may: \n1. Tap Attendance\u003e 3 dots \u003e Refresh GPS\n2. Go to Google Maps\u003e Check if there is location, then go back to EDTR and Refresh location\n3. Go to Phone's settings \u003e Application manager \u003e Tap EDTR \u003e Force Stop\n4. Restart device.\n5. Open EDTR \u003e Login with Login Online box checked.\n6. Go to Menu \u003e Utilities \u003e Send Error Report.\n7. Go to Menu \u003e Utilities \u003e Check connectivity and send us the screenshot." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697521997,
+    "nanos": 658062000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

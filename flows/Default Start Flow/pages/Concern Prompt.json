@@ -1,0 +1,49 @@
+{
+  "name": "5d5e4b68-b6a8-43fa-88e6-068297ab6442",
+  "displayName": "Concern Prompt",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please provide the details of your concern or inquiry." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": null
+      } ]
+    },
+    "targetPage": "Product Selection",
+    "name": "481bcc1f-98f0-44c2-8e46-8875883c62cc"
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Information Prompt",
+    "name": "e7718a7f-dc4e-4c00-bf24-4ed0855d28aa"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "Concern Prompt",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "657c9b80-8399-49a1-bb15-902968af1fb6"
+  }, {
+    "targetPage": "Concern Prompt",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "3d5a148c-e765-47ca-95ab-286602f1c3ee"
+  } ],
+  "description": "There is a separate prompt for Concern as there is an error when getting the user's concern directly as a parameter in the Information Prompt.\n\nFor example, if the user types \"[insert here / reuse] initial text send by client\" in the Information Prompt directly, only the text \"here / reuse] initial text send by\" is received. \n\nHere in the Concern Prompt we use the input.any route to get the user's concern."
+}

@@ -1,0 +1,75 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Di ko na alam ang username ko",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Nalimutan ko ang username ko. Paano ako makakapag-",
+      "auto": true
+    }, {
+      "text": "login",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me retrieve my ",
+      "auto": true
+    }, {
+      "text": "username",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I can't recall my ",
+      "auto": true
+    }, {
+      "text": "username",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I cannot remember my ",
+      "auto": true
+    }, {
+      "text": "username"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I forgot my ",
+      "auto": true
+    }, {
+      "text": "username"
+    }, {
+      "text": ", what can I do to be able to ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

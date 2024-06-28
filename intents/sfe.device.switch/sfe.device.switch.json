@@ -1,0 +1,10 @@
+{
+  "name": "581774f7-e640-4e26-93c3-088b415d4aa4",
+  "displayName": "sfe.device.switch",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 7
+}

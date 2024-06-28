@@ -1,0 +1,137 @@
+{
+  "name": "48601eb0-60e8-4461-9726-82a19a06f293",
+  "displayName": "FAQ SFE Device",
+  "transitionRoutes": [ {
+    "intent": "sfe.device.settings",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Enable the following:\n\n1. Wifi or Mobile Data\n2. Location service\n3. Auto Date \u0026 Time" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "05647908-bb53-4c52-91c1-c179513c91d1"
+  }, {
+    "intent": "sfe.device.data",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "This will depend on files that will be sent via PocketWiSE SFE app (i.e. pictures inside forms, etc.)" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e9348d33-874d-4a84-8b11-1a380fe5775f"
+  }, {
+    "intent": "sfe.device.switch",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your username is already locked in to the device where you initially logged in the said username. To reset this, contact your Admin to have it reset under the Device Maintenance module in the webtool. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e39af76a-cc97-4382-8442-d62b0da8a7cb"
+  }, {
+    "intent": "sfe.device.language",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can uninstall PocketWiSE SFE and reinstall it again. Upon reinstalling, you will be given the chance to select the Language you prefer." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "244b5567-3704-4848-8688-1c63bebabe3a"
+  }, {
+    "intent": "sfe.device.login.used",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " This means that your username has previously been logged in to another device. To reset this, contact your Admin to have it reset under the Device Maintenance module in the webtool. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "f61e9f21-3f5a-4f78-85af-e6968322973a"
+  }, {
+    "intent": "sfe.device.mcp.sync",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Tap synchronize. If it still isn't reflecting, ask your manager to synchronize his PocketWiSE for Managers App as well. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "83369697-e4a0-4072-b866-dc9d0fc0c1b4"
+  }, {
+    "intent": "sfe.device.mcp.edit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Submitted MCPs can still be edited if: \n     1. The DM disapproves the MCP \n     2. The DM approves the MCP and the cycle hasn't started yet" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "2651bab4-1028-4237-9666-685e10becfd6"
+  }, {
+    "intent": "sfe.device.transactions.unsent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To check unsent transactions, follow these steps. Go to Dashboard. Under Alerts widget, tap the outbox icon to see all pending transactions." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "cc760f1a-08c7-4e48-ac19-209e3b890e7d"
+  }, {
+    "intent": "sfe.device.signatures",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can simply go to ACP, then start the call for the doctor you have covered via quick sign. Select End Call and choose confirm via Signature. Then tap Sign Match. You can then select the signiture of the doctor amongst the quick sign signatures (swipe left or right). " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "cc03484e-de3b-43cb-8a4b-eeb725173d15"
+  }, {
+    "intent": "sfe.device.calls.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please try the following procedure to send the calls:\n\n1. Go to ACP.\n2. Search the unsent call.\n3. Tap/Open the call.\n4. Press the 'Send' button.\n5. Wait for the successful message.\n\nIf the error is persistent, please chat with one of our agents." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "65ffda9f-a4b9-47a4-945c-8c9df7f5e596"
+  }, {
+    "intent": "sfe.device.calls.sync.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly check SFE Device Dashboard \u003e Alerts \u003e Outbox if there are unposted transactions or due for sending. You also need a stable internet connection to sync these transactions successfully." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "5fd09197-aa37-4310-994f-1b581da76cb1"
+  } ]
+}

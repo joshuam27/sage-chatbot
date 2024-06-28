@@ -1,0 +1,38 @@
+{
+  "name": "ae22d2ac-b489-43ef-9f44-44d1f1e0ae64",
+  "displayName": "swiftpoint.device.exception.report.attendance 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Why do I have a warning that says Your attendance will be part of the Exception Report"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.exception.report.attendance"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Are you seeing the error \"You are xxx meters away from the store. Your attendance will be part of the Exception Report if you time-in outside the allowable radius of xxx meters. Would you like to proceed?\"\n\nTo confirm your location: \n1. Get your current location in the Time In / Time Out Screen. Click Option \u003e Refresh Location.\n2. To validate location, click Option \u003e Validate Location. Google Maps app will show. The red pin and blue dot should be located on the map closely. \n3. If the issue is persistent, make a screenshot based on step #2 and report it to your supervisor, or edtrsupport@electronicscience.net" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697522070,
+    "nanos": 342469000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

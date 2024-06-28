@@ -1,0 +1,10 @@
+{
+  "name": "a865f275-2683-4281-9fe6-252419d2d486",
+  "displayName": "sfe.device.language",
+  "parameters": [ {
+    "id": "language",
+    "entityType": "@sys.language"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

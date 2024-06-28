@@ -1,0 +1,53 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "condition": "$session.params.has_agreed = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hello! How can I help you?", "Greetings! How can I assist you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Product Selection",
+    "name": "9aaf9556-2bf2-4fe2-a6b4-66ec85fff51f",
+    "description": "There are two \"Welcome Intent\" routes. Thr first one redirects straight to product selection if the user has already agreed to the terms and conditions. The second one is triggered if the user has not yet agreed.\n\nThese routes found in the Start Page are unique, because they can be triggered anywhere throughout the flow. Because of this, we removed the training phrases of the Welcome Intent so that the user will not be redirected back here unexpectedly."
+  }, {
+    "intent": "Default Welcome Intent",
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hello! How can I help you?", "Greetings! How can I assist you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "ESC Privacy Policy and T\u0026C",
+    "name": "888b85c4-a31a-4c00-a9b3-f3747477885e",
+    "description": "There are two \"Welcome Intent\" routes. Thr first one redirects straight to product selection if the user has already agreed to the terms and conditions. The second one is triggered if the user has not yet agreed.\n\nThese routes found in the Start Page are unique, because they can be triggered anywhere throughout the flow. Because of this, we removed the training phrases of the Welcome Intent so that the user will not be redirected back here unexpectedly."
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "ESC Privacy Policy and T\u0026C",
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f05e43db-bc9d-4b50-9924-0fdbe56163a0"
+  }, {
+    "targetPage": "ESC Privacy Policy and T\u0026C",
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f76060e3-8b00-4e2e-b7da-7064cf26e8eb"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "7dca2f6d-9795-4e89-912e-b7afee0d4757",
+  "displayName": "information.edit",
+  "parameters": [ {
+    "id": "information_parameter",
+    "entityType": "@information_parameter"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 6
+}

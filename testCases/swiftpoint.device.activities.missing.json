@@ -1,0 +1,38 @@
+{
+  "name": "4a0edb21-bcf0-4153-926c-276c378a8215",
+  "displayName": "swiftpoint.device.activities.missing",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No activities in attendance"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.activities.missing"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly synchronize or follow the below steps to re-sync the app. \n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. Tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"\"Login Online\"\" box checked." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697167570,
+    "nanos": 932681000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "swiftpoint device",
+    "synonyms": [ "swiftpoint device", "swiftpointdevice" ],
+    "languageCode": "en"
+  }, {
+    "value": "swiftpoint webtool",
+    "synonyms": [ "swiftpoint webtool", "swiftpointwebtool" ],
+    "languageCode": "en"
+  }, {
+    "value": "others",
+    "synonyms": [ "other", "others" ],
+    "languageCode": "en"
+  }, {
+    "value": "sfe device",
+    "synonyms": [ "sfe device", "SFE device" ],
+    "languageCode": "en"
+  }, {
+    "value": "sfe webtool",
+    "synonyms": [ "sfe webtool", "SFE webtool" ],
+    "languageCode": "en"
+  }, {
+    "value": "pma device",
+    "synonyms": [ "pma device" ],
+    "languageCode": "en"
+  }, {
+    "value": "sfe reports",
+    "synonyms": [ "SFE report", "sfe reports" ],
+    "languageCode": "en"
+  } ]
+}

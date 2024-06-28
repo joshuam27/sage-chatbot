@@ -1,0 +1,325 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "Asia/Hong_Kong",
+  "enableLogging": true,
+  "projectNumber": 637783511401,
+  "speechToTextSettings": {
+  
+  },
+  "startFlow": "Default Start Flow",
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableInteractionLogging": true
+    }
+  },
+  "dataResidencyOption": "DATA_RESIDENCY_IN_USE_COMPLIANT",
+  "speakerIdSettings": {
+  
+  },
+  "customPayloadTemplates": [ {
+    "displayName": "Product Selection Quick Replies",
+    "payload": {
+      "quick_replies": [ {
+        "content_type": "text",
+        "payload": "SwiftPoint Device",
+        "title": "SwiftPoint Device"
+      }, {
+        "content_type": "text",
+        "payload": "SwiftPoint Webtool",
+        "title": "SwiftPoint Webtool"
+      }, {
+        "content_type": "text",
+        "payload": "Others",
+        "title": "Others"
+      }, {
+        "content_type": "text",
+        "payload": "Exit",
+        "title": "Exit"
+      } ],
+      "text": "Which among these products do you have a question or concern with?\n\n• SwiftPoint Device\n• SwiftPoint Webtool\n• Others"
+    }
+  }, {
+    "displayName": "Product Selection Menu",
+    "payload": {
+      "attachment": {
+        "payload": {
+          "elements": [ {
+            "buttons": [ {
+              "payload": "SwiftPoint Device",
+              "title": "SwiftPoint Device",
+              "type": "postback"
+            }, {
+              "payload": "SwiftPoint Webtool",
+              "title": "SwiftPoint Webtool",
+              "type": "postback"
+            } ],
+            "image_url": "https://electronicscience.com/swiftpoint/img/SwiftPoint_Plain.png",
+            "subtitle": "For concerns about the SwiftPoint application.",
+            "title": "SwiftPoint"
+          }, {
+            "buttons": [ {
+              "payload": "Others",
+              "title": "Others",
+              "type": "postback"
+            } ],
+            "image_url": "https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/310928035_560932565834570_879007463913642908_n.png?_nc_cat=111\u0026ccb=1-7\u0026_nc_sid=a2f6c7\u0026_nc_ohc=8uTSs0bwjpkAX-DX_6V\u0026_nc_ht=scontent-mnl1-1.xx\u0026oh=00_AfCH-w4MCNkIrcfFnjb4dEb9eCpC6D-4JCKpmyhXI6AftQ\u0026oe=652BEF1B",
+            "subtitle": "You may select this option for concerns about products not listed.",
+            "title": "Others"
+          }, {
+            "buttons": [ {
+              "payload": "Exit Chat",
+              "title": "Exit Chat",
+              "type": "postback"
+            } ],
+            "image_url": "https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/310928035_560932565834570_879007463913642908_n.png?_nc_cat=111\u0026ccb=1-7\u0026_nc_sid=a2f6c7\u0026_nc_ohc=8uTSs0bwjpkAX-DX_6V\u0026_nc_ht=scontent-mnl1-1.xx\u0026oh=00_AfCH-w4MCNkIrcfFnjb4dEb9eCpC6D-4JCKpmyhXI6AftQ\u0026oe=652BEF1B"
+          } ],
+          "template_type": "generic"
+        },
+        "type": "template"
+      }
+    }
+  }, {
+    "displayName": "Product Selection Menu No Agent",
+    "payload": {
+      "attachment": {
+        "payload": {
+          "elements": [ {
+            "buttons": [ {
+              "payload": "SwiftPoint Device",
+              "title": "SwiftPoint Device",
+              "type": "postback"
+            }, {
+              "payload": "SwiftPoint Webtool",
+              "title": "SwiftPoint Webtool",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the SwiftPoint application.",
+            "title": "SwiftPoint"
+          }, {
+            "buttons": [ {
+              "payload": "SFE Device",
+              "title": "SFE Device",
+              "type": "postback"
+            }, {
+              "payload": "SFE Webtool",
+              "title": "SFE Webtool",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the SFE application.",
+            "title": "SFE"
+          }, {
+            "buttons": [ {
+              "payload": "Others",
+              "title": "Others",
+              "type": "postback"
+            } ],
+            "subtitle": "Select this option for concerns about products not listed.",
+            "title": "Others"
+          }, {
+            "buttons": [ {
+              "payload": "Exit Chat",
+              "title": "Exit Chat",
+              "type": "postback"
+            } ]
+          } ],
+          "template_type": "generic"
+        },
+        "type": "template"
+      }
+    }
+  }, {
+    "displayName": "FAQ SwiftPoint Device",
+    "payload": {
+      "attachment": {
+        "payload": {
+          "elements": [ {
+            "buttons": [ {
+              "payload": "Forgot username",
+              "title": "Forgot username",
+              "type": "postback"
+            }, {
+              "payload": "Forgot password",
+              "title": "Forgot password",
+              "type": "postback"
+            }, {
+              "payload": "I cannot login",
+              "title": "I cannot login",
+              "type": "postback"
+            } ],
+            "subtitle": "Frequently asked questions about SwiftPoint Device.",
+            "title": "SwiftPoint Device FAQs"
+          }, {
+            "buttons": [ {
+              "payload": "How to file leave",
+              "title": "How to file leave",
+              "type": "postback"
+            }, {
+              "payload": "How to time in",
+              "title": "How to time in",
+              "type": "postback"
+            }, {
+              "payload": "How to time out",
+              "title": "How to time out",
+              "type": "postback"
+            } ],
+            "subtitle": "Frequently asked questions about SwiftPoint Device.",
+            "title": "SwiftPoint Device FAQs"
+          }, {
+            "buttons": [ {
+              "payload": "Exit Chat",
+              "title": "Exit Chat",
+              "type": "postback"
+            } ]
+          } ],
+          "template_type": "generic"
+        },
+        "type": "template"
+      }
+    }
+  }, {
+    "displayName": "Product Selection Menu With Chat Agent Option",
+    "payload": {
+      "attachment": {
+        "payload": {
+          "elements": [ {
+            "buttons": [ {
+              "payload": "SwiftPoint Device",
+              "title": "SwiftPoint Device",
+              "type": "postback"
+            }, {
+              "payload": "SwiftPoint Webtool",
+              "title": "SwiftPoint Webtool",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the SwiftPoint application.",
+            "title": "SwiftPoint"
+          }, {
+            "buttons": [ {
+              "payload": "SFE Device",
+              "title": "SFE Device",
+              "type": "postback"
+            }, {
+              "payload": "SFE Webtool",
+              "title": "SFE Webtool",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the SFE application.",
+            "title": "SFE"
+          }, {
+            "buttons": [ {
+              "payload": "Others",
+              "title": "Others",
+              "type": "postback"
+            } ],
+            "subtitle": "Select this option for concerns about products not listed.",
+            "title": "Others"
+          }, {
+            "buttons": [ {
+              "payload": "Chat With Agent",
+              "title": "Chat With Agent",
+              "type": "postback"
+            }, {
+              "payload": "Exit Chat",
+              "title": "Exit Chat",
+              "type": "postback"
+            } ],
+            "subtitle": "You may directly chat with an agent for existing tickets."
+          } ],
+          "template_type": "generic"
+        },
+        "type": "template"
+      }
+    }
+  }, {
+    "displayName": "Sample New Menu",
+    "payload": {
+      "attachment": {
+        "payload": {
+          "elements": [ {
+            "buttons": [ {
+              "payload": "SwiftPoint Device",
+              "title": "SwiftPoint Device",
+              "type": "postback"
+            }, {
+              "payload": "SwiftPoint Webtool",
+              "title": "SwiftPoint Webtool",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the SwiftPoint application.",
+            "title": "SwiftPoint"
+          }, {
+            "buttons": [ {
+              "payload": "SFE Device",
+              "title": "SFE Device",
+              "type": "postback"
+            }, {
+              "payload": "SFE Webtool",
+              "title": "SFE Webtool",
+              "type": "postback"
+            }, {
+              "payload": "SFE Reports",
+              "title": "SFE Reports",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the SFE application.",
+            "title": "SFE"
+          }, {
+            "buttons": [ {
+              "payload": "PMA Device",
+              "title": "PMA Device",
+              "type": "postback"
+            }, {
+              "payload": "PMA Webtool",
+              "title": "PMA Webtool",
+              "type": "postback"
+            } ],
+            "subtitle": "For concerns about the PMA application.",
+            "title": "PMA"
+          }, {
+            "buttons": [ {
+              "payload": "Others",
+              "title": "Others",
+              "type": "postback"
+            } ],
+            "subtitle": "Select this option for concerns about products not listed.",
+            "title": "Others"
+          }, {
+            "buttons": [ {
+              "payload": "Chat With Agent",
+              "title": "Chat With Agent",
+              "type": "postback"
+            }, {
+              "payload": "Exit Chat",
+              "title": "Exit Chat",
+              "type": "postback"
+            } ],
+            "subtitle": "You may directly chat with an agent for existing tickets."
+          } ],
+          "template_type": "generic"
+        },
+        "type": "template"
+      }
+    }
+  } ],
+  "textToSpeechSettings": {
+  
+  },
+  "duplexSettings": {
+  
+  },
+  "answerFeedbackSettings": {
+  
+  }
+}

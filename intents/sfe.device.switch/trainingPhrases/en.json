@@ -1,0 +1,101 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "My credentials are already correct but why can't I ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why can't I ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " on a new tablet even if my credentials are correct?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Why can't I ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " from other devices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Di ako maka-",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " sa ibang device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Di ako maka-",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " sa bagong device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Cannot ",
+      "auto": true
+    }, {
+      "text": "login",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " with new device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am using a new tablet, why can't I ",
+      "auto": true
+    }, {
+      "text": "log in",
+      "parameterId": "login",
+      "auto": true
+    }, {
+      "text": " my user credentials?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,24 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Di pa nagre-reflect sa tablet yung naapprove na MCP na sinubmit ko",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Na-approve na ng manager ang sinubmit kong MCP pero di pa lumalabas sa device ko",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My submitted MCP has already been approved by my manager, but it isn't reflecting on my device yet",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

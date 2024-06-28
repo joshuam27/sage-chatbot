@@ -1,0 +1,10 @@
+{
+  "name": "b0f8eb3e-6fa9-42c8-bb7d-1214512f29c1",
+  "displayName": "confirmation.no",
+  "parameters": [ {
+    "id": "geo-country",
+    "entityType": "@sys.geo-country"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 64
+}

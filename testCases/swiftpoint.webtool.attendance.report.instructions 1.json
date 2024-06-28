@@ -1,0 +1,38 @@
+{
+  "name": "46f61cd5-5d15-4f8a-8421-59d75b59fc80",
+  "displayName": "swiftpoint.webtool.attendance.report.instructions 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to get attendance report?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.attendance.report.instructions"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You may login to the web tool and go to Report \u003e Attendance Report Page. Set filter (if applicable), and then click EXPORT icon located at the upper-rightmost part of the page." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697525289,
+    "nanos": 83914000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

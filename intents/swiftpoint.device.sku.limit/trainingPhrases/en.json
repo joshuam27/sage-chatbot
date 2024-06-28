@@ -1,0 +1,17 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "How can I limit the ",
+      "auto": true
+    }, {
+      "text": "SKU",
+      "parameterId": "sku",
+      "auto": true
+    }, {
+      "text": " display?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

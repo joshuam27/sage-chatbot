@@ -1,0 +1,38 @@
+{
+  "name": "72e7c5f5-1166-4643-85ef-80859fa09c42",
+  "displayName": "swiftpoint.device.leaves.file 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to file a leave"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.leaves.file"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Upon successful login, go to the Leave module. Tap [REQUEST LEAVE] button and then fill up the details. Once completed, tap [SEND]. " ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697521706,
+    "nanos": 665203000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

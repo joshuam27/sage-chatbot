@@ -1,0 +1,38 @@
+{
+  "name": "bb582bf3-541b-4a2e-9612-72baaf3f6d91",
+  "displayName": "sfe.webtool.maintenance.doctor.reactivate",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I reactivate a doctor"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.maintenance.doctor.reactivate"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "1. Tap Doctor Maintenance\n2. Select the Doctor\n3. Tap Edit \n4. Tap Doctor Info\n5. Under Status, select Active\n6. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698991072,
+    "nanos": 456465000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}

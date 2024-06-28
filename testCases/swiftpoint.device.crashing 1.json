@@ -1,0 +1,38 @@
+{
+  "name": "dd9e8576-b5b5-4d0e-a29f-927c527b1d3e",
+  "displayName": "swiftpoint.device.crashing 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Device is crashing"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.crashing"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "1. Go to Phone's settings \u003e Application manager \u003e Tap SwiftPoint \u003e Force Stop\n2. Restart device.\n3. Open SwiftPoint \u003e Login with Login Online box checked.\n4. Go to Menu \u003e Utilities \u003e Send Error Report." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697524161,
+    "nanos": 81068000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "e0585a2b-d088-4fe7-ae8e-4419156418eb",
+  "displayName": "swiftpoint.webtool.sku.create #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how to add new sku to the database?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "sku": "SKUs"
+      },
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.sku.create"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can do this by \n1. Going to Maintenance\n2. Item \n3. Add the item details \n4. Save\n\nFor bulk upload\n1. Tap Upload\n2. Item Upload\n3. Download the template \u0026 fill it out\n4. Upload the template" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694141429,
+    "nanos": 991365000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

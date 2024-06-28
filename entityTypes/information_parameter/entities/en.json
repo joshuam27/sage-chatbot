@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "product type",
+    "synonyms": [ "application", "product", "product type" ],
+    "languageCode": "en"
+  }, {
+    "value": "email",
+    "synonyms": [ "e-mail", "email", "email address" ],
+    "languageCode": "en"
+  }, {
+    "value": "concern",
+    "synonyms": [ "concern", "inquiry" ],
+    "languageCode": "en"
+  }, {
+    "value": "username",
+    "synonyms": [ "user name", "username" ],
+    "languageCode": "en"
+  }, {
+    "value": "company",
+    "synonyms": [ "company" ],
+    "languageCode": "en"
+  }, {
+    "value": "contact number",
+    "synonyms": [ "contact number", "phone number" ],
+    "languageCode": "en"
+  } ]
+}

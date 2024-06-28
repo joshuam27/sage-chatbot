@@ -1,0 +1,33 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I have a question about ",
+      "auto": true
+    }, {
+      "text": "swiftpoint webtool",
+      "parameterId": "input_product",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "swiftpoint webtool",
+      "parameterId": "input_product",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My concern is about ",
+      "auto": true
+    }, {
+      "text": "swiftpoint webtool",
+      "parameterId": "input_product",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

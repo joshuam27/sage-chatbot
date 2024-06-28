@@ -1,0 +1,6 @@
+{
+  "name": "d4693503-243d-451b-956b-c098aad03925",
+  "displayName": "sfe.device.mcp.sync",
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

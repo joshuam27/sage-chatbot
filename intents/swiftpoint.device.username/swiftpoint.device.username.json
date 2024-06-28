@@ -1,0 +1,10 @@
+{
+  "name": "33629e54-1e1f-4846-abb1-bea4ea8f2e5a",
+  "displayName": "swiftpoint.device.username",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

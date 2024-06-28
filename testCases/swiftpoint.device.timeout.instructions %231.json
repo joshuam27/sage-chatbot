@@ -1,0 +1,38 @@
+{
+  "name": "1a07a644-46ae-410c-aaf8-e0eb46232803",
+  "displayName": "swiftpoint.device.timeout.instructions #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to timeout"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.timeout.instructions"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly follow the steps below: \n1. Go to Attendance. \n2. (State should be you are currently Timed In). Click [TIME OUT].\n3. Click [CAMERA] icon and then take a selfie.\n4. Click [TIME OUT]." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697167491,
+    "nanos": 316188000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

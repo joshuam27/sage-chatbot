@@ -1,0 +1,10 @@
+{
+  "name": "0df58c1f-70d1-4859-86fc-8ad31716beee",
+  "displayName": "swiftpoint.device.sku.limit",
+  "parameters": [ {
+    "id": "sku",
+    "entityType": "@sku"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 1
+}

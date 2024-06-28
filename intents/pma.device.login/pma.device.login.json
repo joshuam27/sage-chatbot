@@ -1,0 +1,10 @@
+{
+  "name": "896b0be8-81ee-4ae9-8157-1b3512cec7ff",
+  "displayName": "pma.device.login",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 2
+}

@@ -1,0 +1,250 @@
+{
+  "name": "6c0e6d32-22d2-40b7-b511-56c05c5b227e",
+  "displayName": "swiftpoint.device.id.reset",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ESC Privacy Policy and T\u0026C",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "[DEVELOPMENT]\nBefore we start, please visit the data privacy and terms of usage links below and make sure to read and accept them before proceeding.\n\nhttps://www.electronicscience.com/privacy.html\nhttps://www.electronicscience.com/terms.html\n\nDo you understand and agree to the terms of usage and data privacy provisions of this chat system?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Product Selection",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for accepting" ]
+      }, {
+        "text": [ "Which among these products do you have a question or concern with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "swiftpoint device"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "product.selection"
+      },
+      "currentPage": {
+        "name": "SwiftPoint Device",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Got it! Please let me know your concern about the SwiftPoint Device application. Or you may also check the available FAQs." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "invalid device"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.id.reset"
+      },
+      "currentPage": {
+        "name": "Information Prompt",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly contact your Admin to reset your device id. If Admin will not be able to reset the Device ID for you, kindly provide the following information so that an agent may assist you." ]
+      }, {
+        "text": [ "Please enter the email address that you use to login to the application." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "test@email.com"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Information Prompt",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please provide the details of your concern or inquiry." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "im getting an invalid device error"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Information Prompt",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter the username that you use to login to the application. Enter N/A if none." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "N/A"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Information Prompt",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your company name." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ESC"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Information Prompt",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your contact/phone number." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "09012345678"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm Information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "EMAIL ADDRESS: test@email.com\nINQUIRY/CONCERN: an invalid\nPRODUCT: swiftpoint device\nUSERNAME: N/A \nCOMPANY: ESC\nCONTACT NUMBER: 09012345678" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yup"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Live Agent Conversation",
+        "flow": "Live Agent"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you so much for your time and patience. Please make sure that you are reachable via FB Chat and Email. One of our agents will be contacting you soon regarding your concern or inquiry. 😊\n\nWhile waiting, you may send an error report through your application if applicable (Go to Menu \u003e Utilities \u003e Send Error Report)." ]
+      } ],
+      "currentFlow": {
+        "name": "Live Agent"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1719379673,
+    "nanos": 170179000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

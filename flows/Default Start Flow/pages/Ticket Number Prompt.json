@@ -1,0 +1,214 @@
+{
+  "name": "2730a5a1-24a3-4772-925a-e95ae09491da",
+  "displayName": "Ticket Number Prompt",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please enter your ticket number." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "input.ticket.none",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Since you do not have an existing ticket, kindly provide the following information so that we may verify your user account." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Concern Prompt",
+    "name": "9d18945e-2dd8-4935-b234-5d6fcdfbb6aa"
+  }, {
+    "intent": "input.ticket.number",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for your time and patience. One of our agents will be contacting you soon regarding your concern or inquiry. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Live Agent",
+    "name": "2dcc8b69-1dbe-42ee-8b5d-9b4e672e6219"
+  }, {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "501118a7-080e-4440-8105-155fb1e4deea"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Selection",
+    "name": "398e6ced-bc8f-4b77-bbc5-d6f327a5b0a8"
+  }, {
+    "condition": "$session.params.live_agent_done = true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "live_agent_done",
+        "value": false
+      } ]
+    },
+    "targetPage": "Ask Again",
+    "name": "d1c49388-faa9-4b7e-beaa-338f37efabf5"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "I have no ticket",
+            "title": "I have no ticket"
+          }, {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Please enter your ticket number. Or you may select 'I have no ticket' if you are unable to provide your ticket number at this time."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "26f387a9-5a42-4baa-afc4-165765617366"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "I have no ticket",
+            "title": "I have no ticket"
+          }, {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Please enter your ticket number. Or you may select 'I have no ticket' if you are unable to provide your ticket number at this time."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "11c25aa9-257a-4c2f-974f-fbbd9df1c687"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "563c5766-4849-4f5c-a3c9-95c95be72a2d"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "I have no ticket",
+            "title": "I have no ticket"
+          }, {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Please enter your ticket number. Or you may select 'I have no ticket' if you are unable to provide your ticket number at this time."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e1b92df4-dc72-46d6-ba92-d392b942107c"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "I have no ticket",
+            "title": "I have no ticket"
+          }, {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Please enter your ticket number. Or you may select 'I have no ticket' if you are unable to provide your ticket number at this time."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "37dd814f-01a3-47c7-8b45-55e26a661160"
+  }, {
+    "targetPage": "Ask Again",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand, please feel free to explore other options. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9463d5c3-d04f-4931-93b7-85c5c74a1398"
+  }, {
+    "event": "FACEBOOK_MEDIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "I have no ticket",
+            "title": "I have no ticket"
+          }, {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Please enter your ticket number. Or you may select 'I have no ticket' if you are unable to provide your ticket number at this time."
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e259f535-66dc-4381-8282-69e29a462d91"
+  } ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "5feb70fc-5c26-4b57-b9bd-05a2037b4368",
+  "displayName": "swiftpoint.webtool.login.fail",
+  "parameters": [ {
+    "id": "login",
+    "entityType": "@login"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 4
+}

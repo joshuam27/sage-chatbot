@@ -1,0 +1,38 @@
+{
+  "name": "06eb9105-d524-4895-8fd7-14defaad1ffc",
+  "displayName": "swiftpoint.device.sku #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "new sku doesn't display in the inventory items of a store"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.sku"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Connect to the internet and synchronize your device. If it is still not reflecting, contact your Admin and check if they have mapped the SKU to your store" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694138651,
+    "nanos": 782626000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "a3410e6d-e5ca-4ee8-9458-8a35cde27fa4",
+  "displayName": "swiftpoint.device.timein.dayoff #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "can I time in on a day off?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.timein.dayoff"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Check first with your Admin if your company policy allows this. If yes, then your Admin can simply activate the \"Duty on Day-off\" (DoD) setting from the web tool." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694137867,
+    "nanos": 836989000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

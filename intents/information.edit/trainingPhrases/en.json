@@ -1,0 +1,57 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I made a mistake in typing the "
+    }, {
+      "text": "product",
+      "parameterId": "information_parameter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Revise "
+    }, {
+      "text": "product",
+      "parameterId": "information_parameter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Change "
+    }, {
+      "text": "product",
+      "parameterId": "information_parameter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Product",
+      "parameterId": "information_parameter"
+    }, {
+      "text": " is wrong"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to change the "
+    }, {
+      "text": "product",
+      "parameterId": "information_parameter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Edit "
+    }, {
+      "text": "product",
+      "parameterId": "information_parameter"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

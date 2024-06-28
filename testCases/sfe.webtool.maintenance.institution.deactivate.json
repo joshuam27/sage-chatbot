@@ -1,0 +1,38 @@
+{
+  "name": "21cc4e15-b00d-40d9-baf1-0761e3edca3b",
+  "displayName": "sfe.webtool.maintenance.institution.deactivate",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to deactivate institution"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.maintenance.institution.deactivate"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "1. Tap Institution Maintenance\n2. Select the Institution\n3. Tap Edit\n4. Under Status, select Inactive\n5. Then Tap Save\n\nAll changes are subject to your Manager's approval." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698991244,
+    "nanos": 909169000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}

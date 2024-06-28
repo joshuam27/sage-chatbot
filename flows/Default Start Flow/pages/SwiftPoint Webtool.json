@@ -1,0 +1,210 @@
+{
+  "name": "2ae71a19-95a1-4f68-93ae-73593d2819a1",
+  "displayName": "SwiftPoint Webtool",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "attachment": {
+          "payload": {
+            "elements": [ {
+              "buttons": [ {
+                "payload": "Forgot username",
+                "title": "Forgot username",
+                "type": "postback"
+              }, {
+                "payload": "Forgot password",
+                "title": "Forgot password",
+                "type": "postback"
+              }, {
+                "payload": "I cannot login",
+                "title": "I cannot login",
+                "type": "postback"
+              } ],
+              "subtitle": "Frequently asked questions about SwiftPoint Webtool.",
+              "title": "SwiftPoint Webtool FAQs"
+            }, {
+              "buttons": [ {
+                "payload": "How do I add new SKUs?",
+                "title": "How do I add new SKUs?",
+                "type": "postback"
+              }, {
+                "payload": "Get attendance report?",
+                "title": "Get attendance report?",
+                "type": "postback"
+              }, {
+                "payload": "Change work schedule?",
+                "title": "Change work schedule?",
+                "type": "postback"
+              } ],
+              "subtitle": "Frequently asked questions about SwiftPoint Webtool.",
+              "title": "SwiftPoint Webtool FAQs"
+            }, {
+              "buttons": [ {
+                "payload": "Exit Chat",
+                "title": "Exit Chat",
+                "type": "postback"
+              } ]
+            } ],
+            "template_type": "generic"
+          },
+          "type": "template"
+        }
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "580f508c-275e-4ff0-9895-d8acda1c613d"
+  }, {
+    "intent": "selection.return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": null
+      } ]
+    },
+    "targetPage": "Product Selection",
+    "name": "4145b186-f80f-47c0-9422-8d05b59668f9"
+  }, {
+    "intent": "input.any",
+    "condition": "$session.params.reprompt_count \u003e= 1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "768e8409-6789-4aff-8d2f-4ad6acfdbc10",
+    "description": "acts as a no match 2 event"
+  }, {
+    "intent": "input.any",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Exit",
+            "title": "Exit"
+          }, {
+            "content_type": "text",
+            "payload": "Main Menu",
+            "title": "Main Menu"
+          } ],
+          "text": "Sorry I do not understand, could you please rephrase the question? Or you may select an option below."
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": "$sys.func.ADD($session.params.reprompt_count , 1)"
+      } ]
+    },
+    "name": "2a002fa9-fcd9-4212-8129-4e7847e97746",
+    "description": "acts as a no match 1 event"
+  }, {
+    "intent": "live.agent.proceed",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for your time and patience. One of our agents will be contacting you soon regarding your concern or inquiry. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Live Agent Page",
+    "name": "dcf5ca3d-4ad1-407d-80ff-671aebe055cb"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you rephrase the question for me?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "No more questions",
+            "title": "No more questions"
+          } ],
+          "text": "Or let me know if you have no more questions"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "55c7c5f8-5d61-4f30-8197-460c8c9f7b74"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address and concern so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "swiftpoint webtool"
+      } ]
+    },
+    "name": "3d218f86-9be2-4414-89dd-ec69bf3518aa"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Can you further clarify the question or concern, or can you please give me more details?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "No more questions",
+            "title": "No more questions"
+          } ],
+          "text": "Or let me know if you have no more questions"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "48eefe56-ef67-4efd-8740-17886aa73dec"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I apologize for being unable to answer your question or concern at the moment. May I ask for your email address and concern so that an agent can reach out to you?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "swiftpoint webtool"
+      } ]
+    },
+    "name": "49292c7d-d540-471c-a606-7bb4d5f40585"
+  } ],
+  "transitionRouteGroups": [ "FAQ SwiftPoint Webtool" ],
+  "description": "The input.any routes serve as \"no-match\" events. input.any is used so that the user's input for concern could be saved."
+}

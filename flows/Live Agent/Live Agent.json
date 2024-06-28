@@ -1,0 +1,33 @@
+{
+  "name": "6c6861a8-c144-4dfb-bb5b-404fb0c4c9fa",
+  "displayName": "Live Agent",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "live_agent_done",
+        "value": false
+      } ]
+    },
+    "targetPage": "Live Agent Conversation",
+    "name": "038bd3be-0fcc-49b9-a868-7e597da9c935",
+    "description": "This route automatically redirects the user to the \"Live Agent Conversation\" page. Here we set the live_agent_done parameter to false. This parameter will be set to true once the user returns to the chatbot."
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "cb7b4e9b-037c-4903-a474-7126c08fe7f0"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+    
+    },
+    "name": "ef936509-c242-4147-82c8-6636ca938cb8"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

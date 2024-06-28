@@ -1,0 +1,38 @@
+{
+  "name": "1d5c23a5-ae9f-4203-bef6-49e9af05c274",
+  "displayName": "swiftpoint.webtool.attendance.missing #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No records in attendance report"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.attendance.missing"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly ensure you can synchronize or follow the steps below to re-sync the app. \n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. Tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"Login Online\" box checked.\n7. Refresh the webtool retry search criteria. " ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697013291,
+    "nanos": 310266000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

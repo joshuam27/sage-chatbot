@@ -1,0 +1,28 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "My ticket is "
+    }, {
+      "text": "123456",
+      "parameterId": "input_ticket_number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My ticket number is "
+    }, {
+      "text": "123456",
+      "parameterId": "input_ticket_number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "123456",
+      "parameterId": "input_ticket_number"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

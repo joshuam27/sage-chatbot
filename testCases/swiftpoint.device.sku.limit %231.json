@@ -1,0 +1,41 @@
+{
+  "name": "05e9ba3b-8322-48f0-9453-403846394a8f",
+  "displayName": "swiftpoint.device.sku.limit #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to limit SKU display?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "sku": "SKUs"
+      },
+      "triggeredIntent": {
+        "name": "swiftpoint.device.sku.limit"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you can see the Not Carried Module, you may use it to tag SKUs as NOT CARRIED so the product list will show only those SKUs you need in Inventory, OSA, SOS and Near Expiry modules." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694678911,
+    "nanos": 792843000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

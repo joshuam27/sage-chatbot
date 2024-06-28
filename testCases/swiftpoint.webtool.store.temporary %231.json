@@ -1,0 +1,38 @@
+{
+  "name": "6f6d3ecd-011b-418a-94d6-3a52a09200df",
+  "displayName": "swiftpoint.webtool.store.temporary #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how can I temporarily assign a store to a device user?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.store.temporary"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If the store is already part of the store masterlist, you can:\n1. Tap Maintenance\n2. Select Device User Maintenance\n3. Search for the name of the Device User \n4. Add Temporary store\n5. Select the store you want to add as a temporary store\n6. Input the Effectivity Date and \n7. Then Save" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694141468,
+    "nanos": 515290000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

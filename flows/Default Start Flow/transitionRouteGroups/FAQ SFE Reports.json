@@ -1,0 +1,17 @@
+{
+  "name": "d5043337-c3f0-4e5a-a68b-09cc51b27ad5",
+  "displayName": "FAQ SFE Reports",
+  "transitionRoutes": [ {
+    "intent": "sfe.reports.sov.report",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi $session.params.name, you may check the SOV report for the usage of MR of edetailers." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "2460c7bf-84e2-42c2-a694-ca085bb2c1da"
+  } ]
+}

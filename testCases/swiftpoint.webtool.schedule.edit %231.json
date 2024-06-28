@@ -1,0 +1,38 @@
+{
+  "name": "cda37a42-9268-40f9-9076-2853cafeccf0",
+  "displayName": "swiftpoint.webtool.schedule.edit #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How to change work schedule?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.schedule.edit"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly ensure that you are currently logged in: \n\n1. Go to User Maintenance\n2. Tap WORK SCHEDULE tab\n3. Select a date to edit\n4. Tap [Change Time]\n5. Edit details and tap [UPDATE]" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697013263,
+    "nanos": 823795000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "name": "e2d54648-cd43-40fc-a4eb-281fea16030e",
+  "displayName": "FAQ SwiftPoint Device",
+  "transitionRoutes": [ {
+    "intent": "swiftpoint.device.general.info",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "SwiftPoint is an application designed for the management of both principal and agency, which enables them to keep track of the field forces' attendance and activities, and monitor inventory in real-time across all stores.\n\nRevolutionize your workforce management with our app!\n- Effortless Attendance: Say goodbye to manual tracking. Easily record time-in, time-out, breaks, leaves, itineraries, and work schedule changes.\n- Store Data Fields: Take control of your store performance. Track inventory, availability, Share-of-Shelf, freshness, sellout, and define carried items per store effortlessly.\n- Trade Activities Monitoring: Stay one step ahead of the competition. Monitor promo item allocation, implementation, and keep tabs on competitor activities.\n- Customizable Forms: Streamline your paperwork and administrative tasks. Create tailored survey questions for expense reports, reimbursements, and more." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e1544120-7141-4110-b1cf-1b8b717f2063"
+  }, {
+    "intent": "swiftpoint.device.internet",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You need internet during download \u0026 initial log in, but you can use it even when you are offline" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "fee06d18-91d4-4b1d-bc29-e18b7da9e37c"
+  }, {
+    "intent": "swiftpoint.device.phone",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No, your username is locked to the phone where you have initialy logged in. To be able to use a different phone, contact your Admin to reset your device id" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "d50deb08-903a-4b03-91da-f0f4f6c4dcbe"
+  }, {
+    "intent": "swiftpoint.device.settings",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ " You need to enable these settings in your device: \n    1. Wi-Fi or Mobile Data, \n    2. Location Service, and \n    3. Automatic Date and Time" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "9f7d7786-6e87-48da-8878-2be5c486ae8e"
+  }, {
+    "intent": "swiftpoint.device.password",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Contact your Admin to have it reset. Once it has been reset, use your company's default password. Then you can enroll your new password" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e19a5645-5f5a-4107-969e-ee299608df1e"
+  }, {
+    "intent": "swiftpoint.device.outlet",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Make sure that you perform sync today. If yes, please request your coordinator to check via portal if the name of the outlet is set as ACTIVE." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "f24aae55-0ba8-4f4e-bad1-cc8678169c90"
+  }, {
+    "intent": "swiftpoint.device.internet.off",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Turning on the wi-fi will help your device capture a more accurate GPS location. Simply enable the wi-fi without connecting to a hotspot, then log in offline." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "1c41d643-9dcd-4c6f-83ab-16ec62d9f1af"
+  }, {
+    "intent": "swiftpoint.device.timein.offline",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Yes, you can still capture your time-in even if there is no available internet connection." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "edc17d06-f6fe-42f6-b5f3-f80bb74e4c4c"
+  }, {
+    "intent": "swiftpoint.device.timein.store",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You cannot time in to a Store that is not part of the list of Stores in your SwiftPoint. Contact your Admin to have the store added to your Store list." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "62d22635-74cb-4207-98d9-46ec0eb94a2a"
+  }, {
+    "intent": "swiftpoint.device.timein.dayoff",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Check first with your Admin if your company policy allows this. If yes, then your Admin can simply activate the \"Duty on Day-off\" (DoD) setting from the web tool." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "aa3f9473-b448-4d3b-8408-bd69a52359f2"
+  }, {
+    "intent": "swiftpoint.device.sku",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Connect to the internet and synchronize your device. If it is still not reflecting, contact your Admin and check if they have mapped the SKU to your store" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "def380b7-ed05-4292-b37c-07229c6aaf29"
+  }, {
+    "intent": "swiftpoint.device.inventory.check",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You can check the Inventory Reports Module. Tap the vertical ellipsis  to select the cycle that you want to view. \n\n\"Note that the viewable past transactions is dependent on Data Retention settings for your company.\"" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e1337bdc-b4ea-43f0-8d10-063332560226"
+  }, {
+    "intent": "swiftpoint.device.inventory.edit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Yes, you may still edit and send an updated inventory transaction." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "7ddc04a8-d46c-49bc-8b76-bcd115739230"
+  }, {
+    "intent": "swiftpoint.device.sync.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If you cannot sync successfully, follow these steps: \n\n1. Restart the device, and retry sync. \n2. Go to Utilities \u003e Check Connectivity\n3. If the Average Latency value is 400ms and up, this is a possible indication of slow connectivity. Try to use another internet connection or mobile data.\n     3.1. If the Average Latency value is zero, it means you do not have an internet connection.\n     3.2. If the Average Latency value is between 1 ms and 400 ms, retry sync.\n     3.3. If all fails, make a screenshot of the error and report it via email (edtrsupport@electronicscience.net)" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "fd4af75d-7b28-4775-b754-16e2cf16584d"
+  }, {
+    "intent": "swiftpoint.device.sku.limit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If you can see the Not Carried Module, you may use it to tag SKUs as NOT CARRIED so the product list will show only those SKUs you need in Inventory, OSA, SOS and Near Expiry modules." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "53754003-a5f9-470c-abe8-d107ee102142"
+  }, {
+    "intent": "swiftpoint.device.sku.hide",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If you can see the Not Carried Module, you may use it to tag SKUs as NOT CARRIED by following this procedure: \n1. Go to 'Not Carried' module. \n2. Choose a store\n3. Select SKUs and toggle switch (set to OFF) \n4. Synchronize to save changes" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "2a378642-e162-460e-b896-80bfca13c74e"
+  }, {
+    "intent": "swiftpoint.device.gps.none",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "If you keep on getting zero coordinates or 0,0 location, you may: \n1. Tap Attendance\u003e 3 dots \u003e Refresh GPS\n2. Go to Google Maps\u003e Check if there is location, then go back to EDTR and Refresh location\n3. Go to Phone's settings \u003e Application manager \u003e Tap EDTR \u003e Force Stop\n4. Restart device.\n5. Open EDTR \u003e Login with Login Online box checked.\n6. Go to Menu \u003e Utilities \u003e Send Error Report.\n7. Go to Menu \u003e Utilities \u003e Check connectivity and send us the screenshot." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "e08ffc28-b596-4d77-9ec9-b883378417b9"
+  }, {
+    "intent": "swiftpoint.device.upgrade",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please make sure to SYNCHRONIZE successfully first before downloading the update from Playstore." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "771125f6-7a9b-4c60-af11-6072a91bc570"
+  }, {
+    "intent": "swiftpoint.device.exception.report.attendance",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Are you seeing the error \"You are xxx meters away from the store. Your attendance will be part of the Exception Report if you time-in outside the allowable radius of xxx meters. Would you like to proceed?\"\n\nTo confirm your location: \n1. Get your current location in the Time In / Time Out Screen. Click Option \u003e Refresh Location.\n2. To validate location, click Option \u003e Validate Location. Google Maps app will show. The red pin and blue dot should be located on the map closely. \n3. If the issue is persistent, make a screenshot based on step #2 and report it to your supervisor, or edtrsupport@electronicscience.net" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "443c3d62-87bc-429d-8e0c-f1e7b5d3957c"
+  }, {
+    "intent": "swiftpoint.device.login.fail",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Double check your username and password. Make sure that there are no blank spaces in between." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "233e09a8-0f37-4540-8ba9-0b87df8ccec9"
+  }, {
+    "intent": "swiftpoint.device.forms.missing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly follow the instructions below:\n\n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. Tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"Login Online\" box checked.\n\nAlso, please make sure you have a stable internet connection." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "579c9272-a07a-49ce-9d89-ebe3b595dabb"
+  }, {
+    "intent": "swiftpoint.device.crashing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "1. Go to Phone's settings \u003e Application manager \u003e Tap SwiftPoint \u003e Force Stop\n2. Restart device.\n3. Open SwiftPoint \u003e Login with Login Online box checked.\n4. Go to Menu \u003e Utilities \u003e Send Error Report." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "195ae08e-5649-43ae-8539-0c8a57add105"
+  }, {
+    "intent": "swiftpoint.device.app.download",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "FOR ANDROID:\nGo to Play Store \u003e Search for Swiftpoint\n\nFOR IOS:\nYou may search \"pocketwise edtr+\" in App Store or click this link: https://apps.apple.com/ph/app/pocketwise-edtr/id1486508682" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "b21978a8-2045-400c-ab1d-2df081b6e0f2"
+  }, {
+    "intent": "swiftpoint.device.username",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Contact your Admin to ask for your user credentials" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "723589ca-f361-40c8-8655-8e0c130b47b2"
+  }, {
+    "intent": "swiftpoint.device.leaves.file",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Upon successful login, go to the Leave module. Tap [REQUEST LEAVE] button and then fill up the details. Once completed, tap [SEND]. " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "29802bab-7152-4ebb-a9d8-5892d7b4e3b3"
+  }, {
+    "intent": "swiftpoint.device.sync.instructions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Upon successful login, tap the Options (3 dots) icon \u003e Synchronize. Make sure that you have stable internet connection when using this feature." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "7918e4c8-8fb1-45d1-bcbd-bb1821809984"
+  }, {
+    "intent": "swiftpoint.device.general.info",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "SwiftPoint is an application designed for the management of both principal and agency, which enables them to keep track of the field forces' attendance and activities, and monitor inventory in real-time across all stores.\n\nRevolutionize your workforce management with our app!\n- Effortless Attendance: Say goodbye to manual tracking. Easily record time-in, time-out, breaks, leaves, itineraries, and work schedule changes.\n- Store Data Fields: Take control of your store performance. Track inventory, availability, Share-of-Shelf, freshness, sellout, and define carried items per store effortlessly.\n- Trade Activities Monitoring: Stay one step ahead of the competition. Monitor promo item allocation, implementation, and keep tabs on competitor activities.\n- Customizable Forms: Streamline your paperwork and administrative tasks. Create tailored survey questions for expense reports, reimbursements, and more." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "831e67e3-4180-4cb1-be62-c1a18bef68fb"
+  }, {
+    "intent": "swiftpoint.device.timein.instructions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Please follow these steps: \n\n1. Press “Tap here to select store”\nand choose a store from the list\n2. Make sure that your schedule is\ncorrect\n3. Tap “Add Picture” to take a picture\n4. Select Reason (Optional)\n5. Enter Remarks (Optional)\n6. Tap TIME IN and tap YES on the\nConfirmation box" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "1da320b5-0cd3-48a3-9739-d138b6ca971a"
+  }, {
+    "intent": "swiftpoint.device.timeout.instructions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly follow the steps below: \n1. Go to Attendance. \n2. (State should be you are currently Timed In). Click [TIME OUT].\n3. Click [CAMERA] icon and then take a selfie.\n4. Click [TIME OUT]." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "938e8ca3-1097-41c0-9e90-a4230571df17"
+  }, {
+    "intent": "swiftpoint.device.item.missing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly synchronize or follow the below steps to re-sync the app. \n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. Tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"\"Login Online\"\" box checked." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "fa7cb8e0-1e76-49bd-b28f-47f3dcdcf245"
+  }, {
+    "intent": "swiftpoint.device.activities.missing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly synchronize or follow the below steps to re-sync the app. \n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. Tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"\"Login Online\"\" box checked." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "23273f63-3576-4248-98d0-7688e59ba462"
+  }, {
+    "intent": "swiftpoint.device.requirements",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For Android users - At least Android v9 with 2GB RAM" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "288f71b3-e76f-49bc-b1cb-5a8f296c56ac"
+  }, {
+    "intent": "swiftpoint.device.id.reset",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly contact your Admin to reset your device id. If Admin will not be able to reset the Device ID for you, kindly provide the following information so that an agent may assist you." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Information Prompt",
+    "name": "a7b49022-7ae8-46ed-adc9-024b00997000"
+  }, {
+    "intent": "escience.general.info",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "eScience grew out of a passion for innovation and mobile technology. To learn more about us, please visit our website at: https://www.electronicscience.com/index.html" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "06257d67-afc3-4af4-9ae5-e266126b67d9"
+  } ]
+}

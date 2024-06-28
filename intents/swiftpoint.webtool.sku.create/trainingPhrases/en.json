@@ -1,0 +1,32 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "How do I make a new "
+    }, {
+      "text": "SKU",
+      "parameterId": "sku"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I create a "
+    }, {
+      "text": "SKU",
+      "parameterId": "sku"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I add new "
+    }, {
+      "text": "SKUs",
+      "parameterId": "sku"
+    }, {
+      "text": " to the database?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "02e30dff-7732-479e-b3ce-ad57fa642293",
+  "displayName": "sfe.reports.sov.report",
+  "parameters": [ {
+    "id": "information_parameter",
+    "entityType": "@information_parameter"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

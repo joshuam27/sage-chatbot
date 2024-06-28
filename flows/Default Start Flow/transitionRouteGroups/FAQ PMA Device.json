@@ -1,0 +1,41 @@
+{
+  "name": "e43895e5-09d0-4670-9e1f-5483eb69963d",
+  "displayName": "FAQ PMA Device",
+  "transitionRoutes": [ {
+    "intent": "pma.device.login",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Answer for login question" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "d55193b5-814d-452b-8668-e3a3f0d76f98"
+  }, {
+    "intent": "pma.device.password",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To reset password ... .." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "d0560261-d7c0-48a8-8a29-666591f609cf"
+  }, {
+    "intent": "pma.device.language",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "UTILITIES \u003e CHANGE LANGUAGE" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Is Question Answered",
+    "name": "0839d863-5166-4a99-9795-f0c754815a59"
+  } ]
+}

@@ -1,0 +1,7 @@
+{
+  "entities": [ {
+    "value": "SKUs",
+    "synonyms": [ "sku", "SKU", "skus", "SKUs" ],
+    "languageCode": "en"
+  } ]
+}

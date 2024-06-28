@@ -1,0 +1,38 @@
+{
+  "name": "1435cb35-e679-418c-bf77-37bb5bc6f97b",
+  "displayName": "swiftpoint.webtool.dashboard.performance #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "group performance?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.dashboard.performance"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "On the Dashboard, tap the Filter Icon (Inverted Triangle) seen at the upper-right corner and select the filter options applicable to what you wish to view." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1693982374,
+    "nanos": 139259000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

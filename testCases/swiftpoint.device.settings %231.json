@@ -1,0 +1,38 @@
+{
+  "name": "6b8cee72-d155-42f7-b292-67a850c45760",
+  "displayName": "swiftpoint.device.settings #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What settings do I need "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.settings"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ " You need to enable these settings in your device: \n    1. Wi-Fi or Mobile Data, \n    2. Location Service, and \n    3. Automatic Date and Time" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1693971729,
+    "nanos": 627677000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

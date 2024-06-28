@@ -1,0 +1,38 @@
+{
+  "name": "83611cba-8afb-4355-8854-c5af0dfd902d",
+  "displayName": "swiftpoint.webtool.reports.itinerary #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Where can I check the device users who are not following their itinerary?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.reports.itinerary"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can check this under Reports Module. Select Itinerary Compliance and use the filter menu to drill down your search to the specific device user you want to check" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694142698,
+    "nanos": 627869000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

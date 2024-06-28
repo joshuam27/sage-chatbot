@@ -1,0 +1,38 @@
+{
+  "name": "204b54e9-720f-465f-a375-83938789c5e0",
+  "displayName": "swiftpoint.webtool.attendance.summary.instructions 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "download summary of my attendance"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.attendance.summary.instructions"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You may login to the web tool and go to Dashboard Page. Each widget or graph has an EXPORT button allowing you to download the summary or trend." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1697525263,
+    "nanos": 6646000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

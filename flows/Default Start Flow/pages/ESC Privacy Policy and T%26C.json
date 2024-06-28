@@ -1,0 +1,137 @@
+{
+  "name": "4db68e57-4ec4-4949-ae9e-7d207ebd59d4",
+  "displayName": "ESC Privacy Policy and T\u0026C",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "[DEVELOPMENT]\nBefore we start, please visit the data privacy and terms of usage links below and make sure to read and accept them before proceeding.\n\nhttps://www.electronicscience.com/privacy.html\nhttps://www.electronicscience.com/terms.html\n\nDo you understand and agree to the terms of usage and data privacy provisions of this chat system?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "quick_replies": [ {
+          "content_type": "text",
+          "payload": "Yes option",
+          "title": "Yes, I agree"
+        }, {
+          "content_type": "text",
+          "payload": "No option",
+          "title": "No, I don't agree"
+        } ],
+        "text": "Please select your chosen answer"
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for accepting" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": null
+      }, {
+        "parameter": "has_agreed",
+        "value": true
+      } ]
+    },
+    "targetPage": "Product Selection",
+    "name": "cdc30f21-56c0-432b-9311-dfe9a77574f4"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for reviewing our terms and conditions. If you have any questions or concerns, please feel free to reach out. However, at this time, you won't be able to proceed as it appears that the terms and conditions do not align with your preferences or requirements. Feel free to come back again in the future." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "14fd4f36-bf12-4ac5-8ab6-c35c9d974558"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly review the terms and conditions of usage and our data privacy provisions, and type YES if you agree to them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes option",
+            "title": "Yes, I agree"
+          }, {
+            "content_type": "text",
+            "payload": "No option",
+            "title": "No, I don't agree"
+          } ],
+          "text": "Or click on an option below"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "22b0a77f-a0a7-424f-97e5-2ad383274355"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly review the terms and conditions of usage and our data privacy provisions, and type YES if you agree to them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes option",
+            "title": "Yes, I agree"
+          }, {
+            "content_type": "text",
+            "payload": "No option",
+            "title": "No, I don't agree"
+          } ],
+          "text": "Or click on an option below"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6a549642-bcb4-4da9-aebc-945516862c0f"
+  }, {
+    "event": "FACEBOOK_MEDIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Kindly review the terms and conditions of usage and our data privacy provisions, and type YES if you agree to them." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "quick_replies": [ {
+            "content_type": "text",
+            "payload": "Yes option",
+            "title": "Yes, I agree"
+          }, {
+            "content_type": "text",
+            "payload": "No option",
+            "title": "No, I don't agree"
+          } ],
+          "text": "Or click on an option below"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "97d1e240-c757-4c20-b406-2a0ffb46f76b"
+  } ]
+}

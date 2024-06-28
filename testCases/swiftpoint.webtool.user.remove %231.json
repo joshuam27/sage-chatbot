@@ -1,0 +1,38 @@
+{
+  "name": "ac4df48d-6bb3-4af1-8a06-740e20d6e2ca",
+  "displayName": "swiftpoint.webtool.user.remove #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how to remove a user that just resigned?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.user.remove"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Follow these simple steps \n1. Go to maintenance. \n2. Select Device User Maintenance. \n3. Use the search box to look for the device user. \n4. Untick the Active checkbox" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694140742,
+    "nanos": 446906000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

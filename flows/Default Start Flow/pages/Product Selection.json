@@ -1,0 +1,638 @@
+{
+  "name": "365051d7-a79f-4b29-ab27-47205b40d7d4",
+  "displayName": "Product Selection",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Which among these products do you have a question or concern with?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "attachment": {
+          "payload": {
+            "elements": [ {
+              "buttons": [ {
+                "payload": "SwiftPoint Device",
+                "title": "SwiftPoint Device",
+                "type": "postback"
+              }, {
+                "payload": "SwiftPoint Webtool",
+                "title": "SwiftPoint Webtool",
+                "type": "postback"
+              } ],
+              "subtitle": "For concerns about the SwiftPoint application.",
+              "title": "SwiftPoint"
+            }, {
+              "buttons": [ {
+                "payload": "SFE Device",
+                "title": "SFE Device",
+                "type": "postback"
+              }, {
+                "payload": "SFE Webtool",
+                "title": "SFE Webtool",
+                "type": "postback"
+              }, {
+                "payload": "SFE Reports",
+                "title": "SFE Reports",
+                "type": "postback"
+              } ],
+              "subtitle": "For concerns about the SFE application.",
+              "title": "SFE"
+            }, {
+              "buttons": [ {
+                "payload": "PMA Device",
+                "title": "PMA Device",
+                "type": "postback"
+              }, {
+                "payload": "PMA Webtool",
+                "title": "PMA Webtool",
+                "type": "postback"
+              } ],
+              "subtitle": "For concerns about the PMA application.",
+              "title": "PMA"
+            }, {
+              "buttons": [ {
+                "payload": "Others",
+                "title": "Others",
+                "type": "postback"
+              } ],
+              "subtitle": "Select this option for concerns about products not listed.",
+              "title": "Others"
+            }, {
+              "buttons": [ {
+                "payload": "Chat With Agent",
+                "title": "Chat With Agent",
+                "type": "postback"
+              }, {
+                "payload": "Exit Chat",
+                "title": "Exit Chat",
+                "type": "postback"
+              } ],
+              "subtitle": "You may directly chat with an agent for existing tickets."
+            } ],
+            "template_type": "generic"
+          },
+          "type": "template"
+        }
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "input_product",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.exit",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much. Feel free to chat with me again if you have any other concerns. 😊" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Conversation End",
+    "name": "cf855179-04c4-46bc-801c-f8863391d1bc"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"swiftpoint device\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it! Please let me know your concern about the SwiftPoint Device application. Or you may also check the available FAQs." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "SwiftPoint Device",
+    "name": "90c90660-80cc-4a67-b758-437078ab02cf"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"swiftpoint webtool\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it! Please let me know your concern about the SwiftPoint Webtool application. Or you may also check the available FAQs." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "SwiftPoint Webtool",
+    "name": "5afe5945-f5ea-4b3e-9060-8b5371c25b1b"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"sfe device\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it! Please let me know your concern about the SFE Device application. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "SFE Device",
+    "name": "77bc7b72-dcba-4010-936f-7d5ce4bded27"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"sfe webtool\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it! Please let me know your concern about the SFE Webtool application. " ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "SFE Webtool",
+    "name": "0eb7a55b-d3ff-4325-90f5-99c2c509eca9"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"pma device\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What is your concern about PMA Device" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "PMA Device",
+    "name": "00352b67-bc33-4d8c-940f-42bfdc3f47ee"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"others\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For questions or concerns about any topics not listed above, kindly provide the following info so that we may verify your user account." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "others"
+      } ]
+    },
+    "targetPage": "Concern Prompt",
+    "name": "c2cd67a2-cec8-41db-aad1-7d58b264ea12"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product = \"sfe reports\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Got it! Please let me know your concern about the SFE Reports." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "reprompt_count",
+        "value": 0
+      } ]
+    },
+    "targetPage": "SFE Reports",
+    "name": "d1441376-032c-4536-a82c-b8f7badc2182"
+  }, {
+    "intent": "product.selection",
+    "condition": "$session.params.input_product != \"swiftpoint device\" AND $session.params.input_product != \"swiftpoint webtool\" AND $session.params.input_product != \"others\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand. Please type the correct option name or select an option from the menu." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "attachment": {
+            "payload": {
+              "elements": [ {
+                "buttons": [ {
+                  "payload": "SwiftPoint Device",
+                  "title": "SwiftPoint Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SwiftPoint Webtool",
+                  "title": "SwiftPoint Webtool",
+                  "type": "postback"
+                } ],
+                "image_url": "https://electronicscience.com/swiftpoint/img/SwiftPoint_Plain.png",
+                "subtitle": "For concerns about the SwiftPoint application.",
+                "title": "SwiftPoint"
+              }, {
+                "buttons": [ {
+                  "payload": "Others",
+                  "title": "Others",
+                  "type": "postback"
+                } ],
+                "image_url": "https://electronicscience.com/swiftpoint/img/SwiftPoint_Plain.png",
+                "subtitle": "You may select this option for concerns about products not listed.",
+                "title": "Others"
+              }, {
+                "buttons": [ {
+                  "payload": "Exit Chat",
+                  "title": "Exit Chat",
+                  "type": "postback"
+                } ]
+              } ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "87bcd423-d9ae-48da-afa0-02dde933a3d1"
+  }, {
+    "intent": "live.agent.proceed",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Transfer To Agent",
+    "name": "0f11770d-2f05-43ca-8ed4-6bb5d0a47fa5"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand. Please type the correct option name or select an option from the menu." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "attachment": {
+            "payload": {
+              "elements": [ {
+                "buttons": [ {
+                  "payload": "SwiftPoint Device",
+                  "title": "SwiftPoint Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SwiftPoint Webtool",
+                  "title": "SwiftPoint Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SwiftPoint application.",
+                "title": "SwiftPoint"
+              }, {
+                "buttons": [ {
+                  "payload": "SFE Device",
+                  "title": "SFE Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SFE Webtool",
+                  "title": "SFE Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SFE application.",
+                "title": "SFE"
+              }, {
+                "buttons": [ {
+                  "payload": "Others",
+                  "title": "Others",
+                  "type": "postback"
+                } ],
+                "subtitle": "Select this option for concerns about products not listed.",
+                "title": "Others"
+              }, {
+                "buttons": [ {
+                  "payload": "Chat With Agent",
+                  "title": "Chat With Agent",
+                  "type": "postback"
+                }, {
+                  "payload": "Exit Chat",
+                  "title": "Exit Chat",
+                  "type": "postback"
+                } ],
+                "subtitle": "You may directly chat with an agent for existing tickets."
+              } ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6f42870e-cea1-4c35-8051-e8436c01741a"
+  }, {
+    "event": "sys.no-match-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm afraid the application you entered is not in the list. Please type the correct option name or select an option from the menu." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "attachment": {
+            "payload": {
+              "elements": [ {
+                "buttons": [ {
+                  "payload": "SwiftPoint Device",
+                  "title": "SwiftPoint Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SwiftPoint Webtool",
+                  "title": "SwiftPoint Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SwiftPoint application.",
+                "title": "SwiftPoint"
+              }, {
+                "buttons": [ {
+                  "payload": "SFE Device",
+                  "title": "SFE Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SFE Webtool",
+                  "title": "SFE Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SFE application.",
+                "title": "SFE"
+              }, {
+                "buttons": [ {
+                  "payload": "Others",
+                  "title": "Others",
+                  "type": "postback"
+                } ],
+                "subtitle": "Select this option for concerns about products not listed.",
+                "title": "Others"
+              }, {
+                "buttons": [ {
+                  "payload": "Chat With Agent",
+                  "title": "Chat With Agent",
+                  "type": "postback"
+                }, {
+                  "payload": "Exit Chat",
+                  "title": "Exit Chat",
+                  "type": "postback"
+                } ],
+                "subtitle": "You may directly chat with an agent for existing tickets."
+              } ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "bd13c003-1bf5-40f0-a110-29c09f83e0de"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-match-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For questions or concerns about any topics not listed above, kindly provide the following info so we can contact you to get more details." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "others"
+      } ]
+    },
+    "name": "c8ac19bf-5b5a-4825-b010-abe6704ee693"
+  }, {
+    "event": "sys.no-input-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand. Please type the correct option name or select an option from the menu." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "attachment": {
+            "payload": {
+              "elements": [ {
+                "buttons": [ {
+                  "payload": "SwiftPoint Device",
+                  "title": "SwiftPoint Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SwiftPoint Webtool",
+                  "title": "SwiftPoint Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SwiftPoint application.",
+                "title": "SwiftPoint"
+              }, {
+                "buttons": [ {
+                  "payload": "SFE Device",
+                  "title": "SFE Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SFE Webtool",
+                  "title": "SFE Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SFE application.",
+                "title": "SFE"
+              }, {
+                "buttons": [ {
+                  "payload": "Others",
+                  "title": "Others",
+                  "type": "postback"
+                } ],
+                "subtitle": "Select this option for concerns about products not listed.",
+                "title": "Others"
+              }, {
+                "buttons": [ {
+                  "payload": "Chat With Agent",
+                  "title": "Chat With Agent",
+                  "type": "postback"
+                }, {
+                  "payload": "Exit Chat",
+                  "title": "Exit Chat",
+                  "type": "postback"
+                } ],
+                "subtitle": "You may directly chat with an agent for existing tickets."
+              } ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "090fbae2-fdc0-4044-bf22-9559e9030d5a"
+  }, {
+    "event": "sys.no-input-2",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm afraid the application you entered is not in the list. Please type the correct option name or select an option from the menu." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "attachment": {
+            "payload": {
+              "elements": [ {
+                "buttons": [ {
+                  "payload": "SwiftPoint Device",
+                  "title": "SwiftPoint Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SwiftPoint Webtool",
+                  "title": "SwiftPoint Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SwiftPoint application.",
+                "title": "SwiftPoint"
+              }, {
+                "buttons": [ {
+                  "payload": "SFE Device",
+                  "title": "SFE Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SFE Webtool",
+                  "title": "SFE Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SFE application.",
+                "title": "SFE"
+              }, {
+                "buttons": [ {
+                  "payload": "Others",
+                  "title": "Others",
+                  "type": "postback"
+                } ],
+                "subtitle": "Select this option for concerns about products not listed.",
+                "title": "Others"
+              }, {
+                "buttons": [ {
+                  "payload": "Chat With Agent",
+                  "title": "Chat With Agent",
+                  "type": "postback"
+                }, {
+                  "payload": "Exit Chat",
+                  "title": "Exit Chat",
+                  "type": "postback"
+                } ],
+                "subtitle": "You may directly chat with an agent for existing tickets."
+              } ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "83b46eba-567c-407a-a2d6-8bc0b76633ff"
+  }, {
+    "targetPage": "Information Prompt",
+    "event": "sys.no-input-3",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "For questions or concerns about any topics not listed above, kindly provide the following info so we can contact you to get more details." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "input_product",
+        "value": "others"
+      } ]
+    },
+    "name": "b9403016-de0c-43bd-b605-20a0f45fb7a2"
+  }, {
+    "event": "FACEBOOK_MEDIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry I cannot seem to understand. Please type the correct option name or select an option from the menu." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "attachment": {
+            "payload": {
+              "elements": [ {
+                "buttons": [ {
+                  "payload": "SwiftPoint Device",
+                  "title": "SwiftPoint Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SwiftPoint Webtool",
+                  "title": "SwiftPoint Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SwiftPoint application.",
+                "title": "SwiftPoint"
+              }, {
+                "buttons": [ {
+                  "payload": "SFE Device",
+                  "title": "SFE Device",
+                  "type": "postback"
+                }, {
+                  "payload": "SFE Webtool",
+                  "title": "SFE Webtool",
+                  "type": "postback"
+                } ],
+                "subtitle": "For concerns about the SFE application.",
+                "title": "SFE"
+              }, {
+                "buttons": [ {
+                  "payload": "Others",
+                  "title": "Others",
+                  "type": "postback"
+                } ],
+                "subtitle": "Select this option for concerns about products not listed.",
+                "title": "Others"
+              }, {
+                "buttons": [ {
+                  "payload": "Chat With Agent",
+                  "title": "Chat With Agent",
+                  "type": "postback"
+                }, {
+                  "payload": "Exit Chat",
+                  "title": "Exit Chat",
+                  "type": "postback"
+                } ],
+                "subtitle": "You may directly chat with an agent for existing tickets."
+              } ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9995b153-d3b5-4089-999f-1d5f3be65d9a"
+  } ],
+  "description": "In the Entry fulfillment, input_product is set to null so that every time a user redirects to this page, they will be able to select a new input_product without any errors."
+}

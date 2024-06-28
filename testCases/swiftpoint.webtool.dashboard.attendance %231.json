@@ -1,0 +1,38 @@
+{
+  "name": "79e1a0ec-89dc-4590-87cb-eb58b9b71061",
+  "displayName": "swiftpoint.webtool.dashboard.attendance #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "attendance not appearing"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.dashboard.attendance"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "There are 2 possible reasons:\n\n1. The device user hasn't synchronized his device yet\n2. He hasn't timed in yet in the SwiftPoint app" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1693982426,
+    "nanos": 749882000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

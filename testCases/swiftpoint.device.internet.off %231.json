@@ -1,0 +1,38 @@
+{
+  "name": "96c1e9c6-a426-4b07-adc1-4db7638fee99",
+  "displayName": "swiftpoint.device.internet.off #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Can I turn off the wifi?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.internet.off"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Turning on the wi-fi will help your device capture a more accurate GPS location. Simply enable the wi-fi without connecting to a hotspot, then log in offline." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694079727,
+    "nanos": 663028000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

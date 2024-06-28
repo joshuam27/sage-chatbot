@@ -1,0 +1,38 @@
+{
+  "name": "5d66957f-7d38-4148-b927-5669351a5779",
+  "displayName": "swiftpoint.device.forms.missing #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No assigned forms"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.forms.missing"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Kindly follow the instructions below:\n\n1. Tap UTILITIES \u003e Send error report\n2. Once done, go to the phone's settings \u003e Application Manager \u003e Select EDTR \u003e tap Force Stop.\n3. tap the Recent App key on the left side of the device's home button\n4. Close all applications\n5. Restart device\n6. Open eDTR and try logging in again by entering the password and with the \"Login Online\" box checked.\n\nAlso, please make sure you have a stable internet connection." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1695367465,
+    "nanos": 475125000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

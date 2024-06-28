@@ -1,0 +1,38 @@
+{
+  "name": "fb7c0ef0-d4c5-4b23-8afe-063adba73c2f",
+  "displayName": "swiftpoint.webtool.reports.oos #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Is there a report where I can view the common reason for Out of stock items?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.webtool.reports.oos"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Yes! you can check the OOS Report or if you can also check the PEDA reports\n\n*PEDA reports are on a separate subscription basis" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694142727,
+    "nanos": 622268000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Webtool"
+  }
+}

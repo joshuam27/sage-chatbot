@@ -1,0 +1,38 @@
+{
+  "name": "69b5e2a6-e1cb-4640-a9ff-0c412e00f6de",
+  "displayName": "swiftpoint.device.inventory.check #1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how to check inventory in previous cycle"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.inventory.check"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can check the Inventory Reports Module. Tap the vertical ellipsis  to select the cycle that you want to view. \n\n\"Note that the viewable past transactions is dependent on Data Retention settings for your company.\"" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694139011,
+    "nanos": 795791000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

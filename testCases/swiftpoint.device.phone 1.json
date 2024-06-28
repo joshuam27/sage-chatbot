@@ -1,0 +1,38 @@
+{
+  "name": "0ef0038e-1d72-41a4-82ff-dedc2bc25fe5",
+  "displayName": "swiftpoint.device.phone 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Is it possible to use a different phone?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "swiftpoint.device.phone"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "No, your username is locked to the phone where you have initialy logged in. To be able to use a different phone, contact your Admin to reset your device id" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1694079567,
+    "nanos": 995980000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SwiftPoint Device"
+  }
+}

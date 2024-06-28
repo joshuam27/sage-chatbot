@@ -1,0 +1,44 @@
+{
+  "name": "64a87031-5934-4d35-95b3-2e4dd9a5d3d2",
+  "displayName": "sfe.webtool.login",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I cannot seem to login"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sfe.webtool.login"
+      },
+      "currentPage": {
+        "name": "Is Question Answered",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Double check your username and password. Make sure that there are no blank spaces in between. " ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "login",
+        "value": "login"
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1698990679,
+    "nanos": 131112000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "SFE Webtool"
+  }
+}
